@@ -1,0 +1,2093 @@
+2025-01-29 22:15:27,834 INFO discord.client: logging in using static token
+2025-01-29 22:15:33,199 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 48f80ff22b8a047a4a81baa77687e402).
+2025-01-29 22:15:35,212 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:15:35,212 INFO root: ------
+2025-01-29 22:19:19,090 INFO root: Generating profile for name: Alice
+2025-01-29 22:24:48,373 INFO discord.client: logging in using static token
+2025-01-29 22:24:49,722 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 2eafca05149dfc09fa2c2e521e2fb082).
+2025-01-29 22:24:51,736 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:24:51,736 INFO root: ------
+2025-01-29 22:25:26,547 INFO root: Generating profile for name: Alice
+2025-01-29 22:25:40,910 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3633, in matmul
+    b = ops.convert_to_tensor(b, dtype_hint=a.dtype.base_dtype, name="b")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1619, in convert_to_tensor
+    ret = conversion_func(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6549, in pack
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:25:51,009 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 553, in call
+    return TFBaseModelOutputWithPastAndCrossAttentions(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 322, in call
+    return outputs  # x, present, (attentions, cross_attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 196, in call
+    return outputs  # a, present, (attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 139, in merge_heads
+    return tf.reshape(x, new_x_shape)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 2283, in transpose_v2
+    return transpose(a=a, perm=perm, name=name, conjugate=conjugate)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 2354, in transpose
+    with ops.name_scope(name, "transpose", [a]) as name:
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 11882, in transpose
+    return transpose_eager_fallback(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 11913, in transpose_eager_fallback
+    return _result
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 68, in quick_execute
+    return tensors
+
+2025-01-29 22:25:55,226 INFO root: Generated Text: Create a Hinge profile for someone named Alice. Provide the profile details in JSON format with the following keys:
+
+```json
+{
+  "name": "Alice",
+  "dating_me_like": "Dating me is like embarking on a thrilling adventure where every day brings new surprises.",
+  "way_to_heart": "The way to my heart is through heartfelt conversations over a cup of coffee.",
+  "known_for": "I’m known for my culinary skills and spontaneous weekend getaways.",
+  "spontaneous_thing": "Most spontaneous thing I’ve done is book a last-minute flight to Bali.",
+  "geek_out_on": "I geek out on astronomy and the mysteries of the universe."
+}
+```
+
+Now, create a similar profile for Alice. Ensure each key is filled with a meaningful and creative description.
+
+```json
+
+{
+
+  "name": "Alice",
+
+  "dating_me_like": "Alice is dating me.",
+
+  "way_to_heart": "The way to my heart is through heartfelt conversations over a cup of coffee.",
+
+  "known_for": "I’m known for my culinary skills and spontaneous weekend getaways.",
+
+  "spontaneous_thing": "Most spontaneous thing I’ve done is book a last-
+2025-01-29 22:25:55,227 ERROR discord.client: Attempting a reconnect in 0.02s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 667, in connect
+    await self.ws.poll_event()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 648, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-01-29 22:25:55,614 INFO discord.gateway: Shard ID None has successfully RESUMED session 2eafca05149dfc09fa2c2e521e2fb082.
+2025-01-29 22:26:22,417 INFO root: Generating profile for name: Alice
+2025-01-29 22:26:46,904 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 318, in call
+    m = self.mlp(m, training=training)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 229, in call
+    h = self.act(self.c_fc(x))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/activations_tf.py", line 118, in approximate_gelu_wrap
+    return keras.activations.gelu(x, approximate=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/activations.py", line 359, in gelu
+    return tf.nn.gelu(x, approximate)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/nn_ops.py", line 3741, in gelu
+    (features + coeff * math_ops.pow(features, 3))))
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 694, in pow
+    return gen_math_ops._pow(x, y, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 7096, in _pow
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:26:51,268 INFO root: Generated Text: Create a Hinge profile for someone named Alice. Provide the profile details in JSON format with the following keys:
+
+```json
+{
+  "name": "Alice",
+  "dating_me_like": "Dating me is like embarking on a thrilling adventure where every day brings new surprises.",
+  "way_to_heart": "The way to my heart is through heartfelt conversations over a cup of coffee.",
+  "known_for": "I’m known for my culinary skills and spontaneous weekend getaways.",
+  "spontaneous_thing": "Most spontaneous thing I’ve done is book a last-minute flight to Bali.",
+  "geek_out_on": "I geek out on astronomy and the mysteries of the universe."
+}
+```
+
+Now, create a similar profile for Alice. Ensure each key is filled with a meaningful and creative description.
+
+```
+
+{
+
+"name": "Alice",
+
+"age": 26,
+
+"name": "Alice",
+
+"dating_me_like": "I’m a dating addict.",
+
+"way_to_heart": "The way to my heart is through heartfelt conversations over a cup of coffee.",
+
+"known_for": "I’m known for my culinary skills and spontaneous weekend getaways.",
+
+"spontaneous_thing": "Most
+2025-01-29 22:26:51,270 ERROR discord.client: Attempting a reconnect in 2.95s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 667, in connect
+    await self.ws.poll_event()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 648, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-01-29 22:26:54,671 INFO discord.gateway: Shard ID None has successfully RESUMED session 2eafca05149dfc09fa2c2e521e2fb082.
+2025-01-29 22:27:18,839 INFO root: Generating profile for name: Luca
+2025-01-29 22:27:45,706 INFO root: Generated Text: Create a Hinge profile for someone named Luca. Provide the profile details in JSON format with the following keys:
+
+```json
+{
+  "name": "Luca",
+  "dating_me_like": "Dating me is like embarking on a thrilling adventure where every day brings new surprises.",
+  "way_to_heart": "The way to my heart is through heartfelt conversations over a cup of coffee.",
+  "known_for": "I’m known for my culinary skills and spontaneous weekend getaways.",
+  "spontaneous_thing": "Most spontaneous thing I’ve done is book a last-minute flight to Bali.",
+  "geek_out_on": "I geek out on astronomy and the mysteries of the universe."
+}
+```
+
+Now, create a similar profile for Luca. Ensure each key is filled with a meaningful and creative description.
+
+```
+
+Now, use the same JSON API to create your new profile.
+
+```
+
+If you want to customize the profile, you can add a couple of new fields to your JSON array.
+
+```
+
+If you want to customize your data, you can add a couple of new fields to your JSON array.
+
+```
+
+You can also customize your profile's color by adding a new field to your JSON array.
+
+```
+
+The
+2025-01-29 22:30:52,996 INFO discord.client: logging in using static token
+2025-01-29 22:30:55,388 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 7301ee36b9aa8cd87f6a3fc0fb5708bd).
+2025-01-29 22:30:57,392 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:30:57,392 INFO root: ------
+2025-01-29 22:31:12,518 INFO root: Generating profile for name: Luca
+2025-01-29 22:31:45,264 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3633, in matmul
+    b = ops.convert_to_tensor(b, dtype_hint=a.dtype.base_dtype, name="b")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1619, in convert_to_tensor
+    ret = conversion_func(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6549, in pack
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:31:55,281 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 322, in call
+    return outputs  # x, present, (attentions, cross_attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 196, in call
+    return outputs  # a, present, (attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1821, in concat
+    return gen_array_ops.concat_v2(values=values, axis=axis, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1260, in concat_v2
+    return _result
+
+2025-01-29 22:32:05,345 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 30 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3667, in matmul
+    return gen_math_ops.batch_mat_mul_v2(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1654, in convert_to_tensor
+    return ret
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6551, in pack
+    return _result
+
+2025-01-29 22:32:15,358 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 40 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 322, in call
+    return outputs  # x, present, (attentions, cross_attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+
+2025-01-29 22:32:25,473 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 50 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 277, in call
+    output_attn = self.attn(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/layers/normalization/layer_normalization.py", line 355, in call
+    return outputs
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/nn_impl.py", line 1587, in batch_normalization
+    with ops.name_scope(name, "batchnorm", [x, mean, variance, scale, offset]):
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 1401, in binary_op_wrapper
+    with ops.name_scope(None, op_name, [x, y]) as name:
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 1767, in _mul_dispatch
+    return multiply(x, y, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 529, in multiply
+    return gen_math_ops.mul(x, y, name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6579, in mul
+    return _result
+
+2025-01-29 22:32:35,475 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 60 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 318, in call
+    m = self.mlp(m, training=training)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 229, in call
+    h = self.act(self.c_fc(x))
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 3309, in call
+    x = tf.matmul(x, self.weight) + self.bias
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3714, in matmul
+    return gen_math_ops.mat_mul(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6014, in mat_mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:32:43,399 ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='discord.py: on_message' coro=<Client._run_event() done, defined at /home/ale/.local/lib/python3.10/site-packages/discord/client.py:441> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 167, in generate_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 277, in call
+    output_attn = self.attn(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 188, in call
+    attn_outputs = self._attn(query, key, value, attention_mask, head_mask, output_attentions, training=training)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 114, in _attn
+    b = self.causal_attention_mask(nd, ns, dtype=w.dtype)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 97, in causal_attention_mask
+    i = tf.range(nd)[:, None]
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 2124, in range
+    return gen_math_ops._range(start, limit, delta, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 7734, in _range
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+2025-01-29 22:32:51,676 INFO discord.client: logging in using static token
+2025-01-29 22:32:53,177 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 3c2e688ca3de4817dfc9957e9332700b).
+2025-01-29 22:32:55,182 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:32:55,182 INFO root: ------
+2025-01-29 22:33:12,301 INFO root: Generating profile for user: Ale
+2025-01-29 22:33:43,862 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3633, in matmul
+    b = ops.convert_to_tensor(b, dtype_hint=a.dtype.base_dtype, name="b")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1619, in convert_to_tensor
+    ret = conversion_func(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6549, in pack
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:33:53,918 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1953, in sample_body_fn
+    next_tokens_scores = logits_warper(generated, next_tokens_scores, cur_len)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 952, in call
+    return TFCausalLMOutputWithCrossAttentions(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3617, in matmul
+    with ops.name_scope(name, "MatMul", [a, b]) as name:
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1654, in convert_to_tensor
+    return ret
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6551, in pack
+    return _result
+
+2025-01-29 22:34:03,929 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 30 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 322, in call
+    return outputs  # x, present, (attentions, cross_attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1092, in __call__
+    with call_context.enter(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 158, in error_handler
+    del bound_signature
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 196, in call
+    return outputs  # a, present, (attentions)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 133, in _attn
+    return outputs
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 201, in reshape
+    return result
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 8546, in reshape
+    return reshape_eager_fallback(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 8577, in reshape_eager_fallback
+    return _result
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 68, in quick_execute
+    return tensors
+
+2025-01-29 22:34:13,934 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 40 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 922, in call
+    transformer_outputs = self.transformer(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 513, in call
+    outputs = block(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 276, in call
+    a = self.ln_1(x)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/layers/normalization/layer_normalization.py", line 296, in call
+    outputs = tf.nn.batch_normalization(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/nn_impl.py", line 1593, in batch_normalization
+    return x * math_ops.cast(inv, x.dtype) + math_ops.cast(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 155, in error_handler
+    del filtered_tb
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 5537, in rsqrt
+    return gen_math_ops.rsqrt(x, name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 8589, in rsqrt
+    return _result
+
+2025-01-29 22:34:23,935 WARNING discord.gateway: Shard ID None heartbeat blocked for more than 50 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 233, in <module>
+    bot.run(DISCORD_TOKEN)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3667, in matmul
+    return gen_math_ops.batch_mat_mul_v2(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 1571, in batch_mat_mul_v2
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+
+2025-01-29 22:34:29,069 ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='discord.py: on_message' coro=<Client._run_event() done, defined at /home/ale/.local/lib/python3.10/site-packages/discord/client.py:441> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 869, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1411, in on_message
+    await self.process_commands(message)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1408, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 199, in my_profile
+    profile_data = await generate_profile_content(name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 116, in generate_profile_content
+    generated = generator(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 285, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1362, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1369, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1264, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 383, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 947, in generate
+    return self.sample(
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 2032, in sample
+    generated, _, cur_len, _ = tf.while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py", line 629, in new_func
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2516, in while_loop_v2
+    return while_loop(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2765, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2756, in <lambda>
+    body = lambda i, lv: (i + 1, orig_body(*lv))
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/generation/tf_utils.py", line 1943, in sample_body_fn
+    model_outputs = self(
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/training.py", line 561, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/modeling_tf_utils.py", line 437, in run_call_with_unpacked_inputs
+    return func(self, **unpacked_inputs)
+  File "/home/ale/.local/lib/python3.10/site-packages/transformers/models/gpt2/modeling_tf_gpt2.py", line 939, in call
+    logits = tf.matmul(hidden_states, self.transformer.wte.weights, transpose_b=True)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 3633, in matmul
+    b = ops.convert_to_tensor(b, dtype_hint=a.dtype.base_dtype, name="b")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1619, in convert_to_tensor
+    ret = conversion_func(
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1589, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 1496, in _autopacking_helper
+    return gen_array_ops.pack(list_or_tuple, name=name)
+  File "/home/ale/.local/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6549, in pack
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+2025-01-29 22:42:28,766 INFO root: No existing profile cache found. Starting fresh.
+2025-01-29 22:42:28,768 INFO discord.client: logging in using static token
+2025-01-29 22:42:30,078 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: ad0557043f028d848804d437848f6835).
+2025-01-29 22:42:32,089 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:42:32,089 INFO root: ------
+2025-01-29 22:43:10,390 ERROR root: An error occurred: Member "@carlo" not found.
+2025-01-29 22:46:25,100 ERROR root: An error occurred: Command raised an exception: NameError: name 'time' is not defined
+2025-01-29 22:47:08,508 INFO root: No existing profile cache found. Starting fresh.
+2025-01-29 22:47:08,510 INFO discord.client: logging in using static token
+2025-01-29 22:47:09,648 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f265b8556c23cfb69c889361394af527).
+2025-01-29 22:47:11,659 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:47:11,659 INFO root: ------
+2025-01-29 22:47:19,222 INFO root: Generating profile for Ale
+2025-01-29 22:47:19,222 INFO root: Profile for Ale stored in cache.
+2025-01-29 22:47:19,223 INFO root: Profile cache updated.
+2025-01-29 22:49:36,031 INFO root: Profile cache loaded.
+2025-01-29 22:49:36,032 INFO discord.client: logging in using static token
+2025-01-29 22:49:37,030 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c8cae25fa0bdc35b8287884b491f4140).
+2025-01-29 22:49:39,123 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:49:39,123 INFO root: ------
+2025-01-29 22:49:46,321 INFO root: Generating profile for Ale
+2025-01-29 22:49:46,321 INFO root: Profile for Ale fetched from cache.
+2025-01-29 22:49:57,495 INFO root: Generating profile for Ale
+2025-01-29 22:49:57,495 INFO root: Profile for Ale fetched from cache.
+2025-01-29 22:50:35,492 INFO root: Profile for Ale has been reset.
+2025-01-29 22:50:50,231 INFO root: Generating profile for Ale
+2025-01-29 22:50:50,231 INFO root: Profile for Ale stored in cache.
+2025-01-29 22:50:50,231 INFO root: Profile cache updated.
+2025-01-29 22:52:53,617 INFO root: Profile cache loaded.
+2025-01-29 22:52:53,618 INFO discord.client: logging in using static token
+2025-01-29 22:52:54,696 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f86945604347278e2d15fa11bb357aed).
+2025-01-29 22:52:56,708 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:52:56,708 INFO root: ------
+2025-01-29 22:53:24,038 INFO root: Generating profile for Ale
+2025-01-29 22:53:24,038 INFO root: Profile for Ale fetched from cache.
+2025-01-29 22:53:24,038 ERROR root: An error occurred: Command raised an exception: KeyError: 'age'
+2025-01-29 22:55:51,160 INFO root: Profile cache loaded.
+2025-01-29 22:55:51,160 WARNING root: Added missing key 'age' to profile of member ID 361838641099571200.
+2025-01-29 22:55:51,160 WARNING root: Added missing key 'job' to profile of member ID 361838641099571200.
+2025-01-29 22:55:51,160 WARNING root: Added missing key 'funny_fact' to profile of member ID 361838641099571200.
+2025-01-29 22:55:51,160 INFO root: Profile cache updated with missing keys.
+2025-01-29 22:55:51,162 INFO discord.client: logging in using static token
+2025-01-29 22:55:52,170 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c4f44077c62db263d64d079edcc12bac).
+2025-01-29 22:55:54,182 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 22:55:54,182 INFO root: ------
+2025-01-29 22:56:07,470 INFO root: Generating profile for Ale
+2025-01-29 22:56:07,470 INFO root: Profile for Ale fetched from cache.
+2025-01-29 22:56:33,017 INFO root: Profile for Ale has been reset.
+2025-01-29 22:56:40,136 INFO root: Generating profile for Ale
+2025-01-29 22:56:40,137 INFO root: Profile for Ale stored in cache.
+2025-01-29 22:56:40,137 INFO root: Profile cache updated.
+2025-01-29 22:59:09,609 INFO root: Profile for Ale has been reset.
+2025-01-29 23:00:02,204 INFO root: Generating profile for Kira666
+2025-01-29 23:00:02,204 INFO root: Profile for Kira666 stored in cache.
+2025-01-29 23:00:02,204 INFO root: Profile cache updated.
+2025-01-29 23:00:15,905 INFO root: Generating profile for Kira666
+2025-01-29 23:00:15,905 INFO root: Profile for Kira666 fetched from cache.
+2025-01-29 23:00:24,907 INFO root: Generating profile for Ale
+2025-01-29 23:00:24,907 INFO root: Profile for Ale stored in cache.
+2025-01-29 23:00:24,908 INFO root: Profile cache updated.
+2025-01-29 23:06:02,515 INFO root: Profile cache loaded.
+2025-01-29 23:06:02,516 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:08:34,528 INFO root: Profile cache loaded.
+2025-01-29 23:08:34,528 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:08:34,529 INFO discord.client: logging in using static token
+2025-01-29 23:08:35,707 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 20ac6070baaa78f147d1ada5a9e1d76a).
+2025-01-29 23:08:37,719 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:08:37,719 INFO root: ------
+2025-01-29 23:08:55,684 INFO root: Generating profile for Ale
+2025-01-29 23:08:55,684 INFO root: Profile for Ale fetched from cache.
+2025-01-29 23:09:24,870 ERROR root: An error occurred: Command raised an exception: NameError: name 'like_member' is not defined
+2025-01-29 23:10:49,248 INFO root: Profile cache loaded.
+2025-01-29 23:10:49,248 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:10:49,250 INFO discord.client: logging in using static token
+2025-01-29 23:10:50,327 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 772dd25b40b3bd8659617b1cf33f454f).
+2025-01-29 23:10:52,338 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:10:52,338 INFO root: ------
+2025-01-29 23:11:15,603 INFO root: Profile for Kira666 has been reset.
+2025-01-29 23:11:29,593 INFO root: Generating profile for Kira666
+2025-01-29 23:11:29,593 INFO root: Profile for Kira666 stored in cache.
+2025-01-29 23:11:29,593 INFO root: Profile cache updated.
+2025-01-29 23:11:36,547 INFO root: Likes cache saved.
+2025-01-29 23:11:36,767 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:12:37,345 INFO root: Likes cache saved.
+2025-01-29 23:12:37,591 INFO root: Ale unliked Kira666's profile.
+2025-01-29 23:12:42,230 INFO root: Likes cache saved.
+2025-01-29 23:12:42,435 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:13:40,834 INFO root: Likes cache saved.
+2025-01-29 23:13:41,293 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:13:56,436 INFO root: Likes cache saved.
+2025-01-29 23:13:56,648 INFO root: Ale unliked Kira666's profile.
+2025-01-29 23:17:53,638 INFO root: Profile cache loaded.
+2025-01-29 23:17:53,638 INFO root: Likes cache loaded.
+2025-01-29 23:17:53,639 INFO discord.client: logging in using static token
+2025-01-29 23:17:54,728 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f3582397fb03563f1ce6b174b5a680ff).
+2025-01-29 23:17:56,733 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:17:56,733 INFO root: ------
+2025-01-29 23:18:41,014 INFO root: Likes cache saved.
+2025-01-29 23:18:41,014 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:18:41,271 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:18:42,173 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:18:50,567 INFO root: Likes cache saved.
+2025-01-29 23:18:50,567 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:18:50,567 WARNING root: Member ID 361838641099571200 attempted to unlike Member ID 795071753583984720 without a prior like.
+2025-01-29 23:18:50,782 INFO root: Ale attempted to unlike Kira666's profile without a prior like.
+2025-01-29 23:19:23,300 INFO root: Likes cache saved.
+2025-01-29 23:19:23,300 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:19:23,576 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:19:23,816 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:19:37,713 INFO root: Likes cache saved.
+2025-01-29 23:19:37,713 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-29 23:19:37,713 WARNING root: Member ID 795071753583984720 attempted to unlike Member ID 361838641099571200 without a prior like.
+2025-01-29 23:19:37,942 INFO root: Kira666 attempted to unlike Ale's profile without a prior like.
+2025-01-29 23:20:21,259 INFO root: Likes cache saved.
+2025-01-29 23:20:21,260 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:20:21,260 WARNING root: Member ID 361838641099571200 attempted to unlike Member ID 795071753583984720 without a prior like.
+2025-01-29 23:20:21,587 INFO root: Ale attempted to unlike Kira666's profile without a prior like.
+2025-01-29 23:20:49,582 INFO root: Likes cache saved.
+2025-01-29 23:20:49,583 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:20:50,036 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:20:51,586 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:22:47,669 INFO root: Profile cache loaded.
+2025-01-29 23:22:47,669 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:22:47,670 INFO discord.client: logging in using static token
+2025-01-29 23:22:48,982 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 269c2927939a41c9e7f104cf7c48275c).
+2025-01-29 23:22:50,994 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:22:50,994 INFO root: ------
+2025-01-29 23:23:10,466 INFO root: No existing profile cache found. Starting fresh.
+2025-01-29 23:23:10,466 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:23:10,467 INFO discord.client: logging in using static token
+2025-01-29 23:23:11,561 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c440ae9e2d90ffa09c252ff47be15859).
+2025-01-29 23:23:13,579 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:23:13,579 INFO root: ------
+2025-01-29 23:23:52,062 INFO root: Generating profile for Kira666
+2025-01-29 23:23:52,062 INFO root: Profile for Kira666 stored in cache.
+2025-01-29 23:23:52,062 INFO root: Profile cache updated.
+2025-01-29 23:23:59,885 INFO root: Generating profile for Ale
+2025-01-29 23:23:59,885 INFO root: Profile for Ale stored in cache.
+2025-01-29 23:23:59,885 INFO root: Profile cache updated.
+2025-01-29 23:24:06,061 INFO root: Initialized likes list for member ID 795071753583984720.
+2025-01-29 23:24:06,061 INFO root: Likes cache saved.
+2025-01-29 23:24:06,061 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:24:06,439 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:24:06,855 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:24:37,145 INFO root: Likes cache saved.
+2025-01-29 23:24:37,146 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:24:37,146 WARNING root: Member ID 361838641099571200 attempted to unlike Member ID 795071753583984720 without a prior like.
+2025-01-29 23:24:37,403 INFO root: Ale attempted to unlike Kira666's profile without a prior like.
+2025-01-29 23:27:13,436 INFO root: Initialized likes list for member ID 361838641099571200.
+2025-01-29 23:27:13,436 INFO root: Likes cache saved.
+2025-01-29 23:27:13,436 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:27:13,739 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:27:14,173 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:27:46,136 INFO root: Likes cache saved.
+2025-01-29 23:27:46,136 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-29 23:27:46,137 WARNING root: Member ID 795071753583984720 attempted to unlike Member ID 361838641099571200 without a prior like.
+2025-01-29 23:27:46,459 INFO root: Kira666 attempted to unlike Ale's profile without a prior like.
+2025-01-29 23:28:37,294 INFO root: Likes cache saved.
+2025-01-29 23:28:37,295 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:28:37,792 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:28:38,008 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:29:17,022 INFO root: Likes cache saved.
+2025-01-29 23:29:17,022 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:29:17,271 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:29:17,635 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:29:56,957 INFO root: Likes cache saved.
+2025-01-29 23:29:56,957 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:29:56,957 WARNING root: Member ID 361838641099571200 attempted to unlike Member ID 795071753583984720 without a prior like.
+2025-01-29 23:29:57,155 INFO root: Ale attempted to unlike Kira666's profile without a prior like.
+2025-01-29 23:32:32,226 INFO root: Likes cache saved.
+2025-01-29 23:32:32,226 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:32:32,506 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:32:32,764 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:33:17,360 INFO root: Likes cache saved.
+2025-01-29 23:33:17,361 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:33:17,361 WARNING root: Member ID 361838641099571200 attempted to unlike Member ID 795071753583984720 without a prior like.
+2025-01-29 23:33:17,577 INFO root: Ale attempted to unlike Kira666's profile without a prior like.
+2025-01-29 23:37:48,922 INFO root: No existing profile cache found. Starting fresh.
+2025-01-29 23:37:48,922 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:37:48,924 INFO discord.client: logging in using static token
+2025-01-29 23:37:50,152 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 1fe897a650b8b794c38cdf1594c25838).
+2025-01-29 23:37:52,164 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:37:52,164 INFO root: ------
+2025-01-29 23:38:03,259 INFO root: Generating profile for Ale
+2025-01-29 23:38:03,260 INFO root: Profile for Ale stored in cache.
+2025-01-29 23:38:03,260 INFO root: Profile cache updated.
+2025-01-29 23:38:11,221 INFO root: Generating profile for Kira666
+2025-01-29 23:38:11,221 INFO root: Profile for Kira666 stored in cache.
+2025-01-29 23:38:11,222 INFO root: Profile cache updated.
+2025-01-29 23:38:18,112 INFO root: Initialized likes list for member ID 795071753583984720.
+2025-01-29 23:38:18,113 INFO root: Likes cache saved.
+2025-01-29 23:38:18,113 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:38:18,717 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:38:19,235 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:38:37,257 INFO root: Initialized likes list for member ID 361838641099571200.
+2025-01-29 23:38:37,257 INFO root: Likes cache saved.
+2025-01-29 23:38:37,257 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:38:37,563 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:38:38,181 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:38:56,366 INFO root: Likes cache saved.
+2025-01-29 23:38:56,366 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:38:56,669 INFO root: Ale unliked Kira666's profile.
+2025-01-29 23:38:57,129 INFO root: Notified Kira666 of the broken match with Ale.
+2025-01-29 23:39:37,226 INFO root: Likes cache saved.
+2025-01-29 23:39:37,226 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:39:37,485 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:39:37,707 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:40:52,521 INFO root: Likes cache saved.
+2025-01-29 23:40:52,521 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:40:52,780 INFO root: Ale unliked Kira666's profile.
+2025-01-29 23:40:53,014 INFO root: Notified Kira666 of the broken match with Ale.
+2025-01-29 23:44:29,517 INFO root: Likes cache saved.
+2025-01-29 23:44:29,517 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-29 23:44:29,517 WARNING root: Member ID 795071753583984720 attempted to unlike Member ID 361838641099571200 without a prior like.
+2025-01-29 23:44:29,837 INFO root: Kira666 attempted to unlike Ale's profile without a prior like.
+2025-01-29 23:46:03,994 INFO root: Likes cache saved.
+2025-01-29 23:46:03,995 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:46:04,298 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:46:04,874 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:50:57,015 INFO root: Profile cache loaded.
+2025-01-29 23:50:57,015 INFO root: Likes cache loaded.
+2025-01-29 23:50:57,017 INFO discord.client: logging in using static token
+2025-01-29 23:50:58,297 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 55a07ef6138ff15fa729f3d02282ec36).
+2025-01-29 23:51:00,308 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:51:00,308 INFO root: ------
+2025-01-29 23:51:16,511 INFO root: No existing profile cache found. Starting fresh.
+2025-01-29 23:51:16,511 INFO root: No existing likes cache found. Starting fresh.
+2025-01-29 23:51:16,513 INFO discord.client: logging in using static token
+2025-01-29 23:51:17,564 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: b28bb99c3a4f3b95c8c611341c97388c).
+2025-01-29 23:51:19,576 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-29 23:51:19,576 INFO root: ------
+2025-01-29 23:52:01,207 INFO root: Generating profile for Ale
+2025-01-29 23:52:01,207 INFO root: Profile for Ale stored in cache.
+2025-01-29 23:52:01,207 INFO root: Profile cache updated.
+2025-01-29 23:52:18,122 INFO root: Generating profile for Kira666
+2025-01-29 23:52:18,122 INFO root: Profile for Kira666 stored in cache.
+2025-01-29 23:52:18,123 INFO root: Profile cache updated.
+2025-01-29 23:52:29,234 INFO root: Initialized likes list for member ID 795071753583984720.
+2025-01-29 23:52:29,235 INFO root: Likes cache saved.
+2025-01-29 23:52:29,236 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-29 23:52:29,453 INFO root: Ale liked Kira666's profile.
+2025-01-29 23:52:29,880 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-29 23:54:10,236 INFO root: Initialized likes list for member ID 361838641099571200.
+2025-01-29 23:54:10,236 INFO root: Likes cache saved.
+2025-01-29 23:54:10,236 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:54:10,455 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:54:10,888 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:56:09,838 INFO root: Likes cache saved.
+2025-01-29 23:56:09,838 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-29 23:56:10,145 INFO root: Ale unliked Kira666's profile.
+2025-01-29 23:56:10,546 INFO root: Notified Kira666 of the broken match with Ale.
+2025-01-29 23:56:24,549 INFO root: Likes cache saved.
+2025-01-29 23:56:24,549 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-29 23:56:24,549 WARNING root: Member ID 795071753583984720 attempted to unlike Member ID 361838641099571200 without a prior like.
+2025-01-29 23:56:24,784 INFO root: Kira666 attempted to unlike Ale's profile without a prior like.
+2025-01-29 23:56:59,000 INFO root: Likes cache saved.
+2025-01-29 23:56:59,000 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-29 23:56:59,312 INFO root: Kira666 liked Ale's profile.
+2025-01-29 23:56:59,560 INFO root: Notified Ale of a new match with Kira666.
+2025-01-29 23:57:26,577 INFO root: Likes cache saved.
+2025-01-29 23:57:26,578 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-29 23:57:26,578 WARNING root: Member ID 795071753583984720 attempted to unlike Member ID 361838641099571200 without a prior like.
+2025-01-29 23:57:26,936 INFO root: Kira666 attempted to unlike Ale's profile without a prior like.
+2025-01-30 00:13:16,923 INFO root: Profile cache loaded.
+2025-01-30 00:13:16,923 INFO root: Likes cache loaded.
+2025-01-30 00:13:16,925 INFO discord.client: logging in using static token
+2025-01-30 00:13:18,024 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: ef3480e1db87ddf909e052bd7ba6cd26).
+2025-01-30 00:13:20,036 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:13:20,036 INFO root: ------
+2025-01-30 00:13:29,874 INFO root: Profile cache loaded.
+2025-01-30 00:13:29,875 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 00:13:29,876 INFO discord.client: logging in using static token
+2025-01-30 00:13:31,063 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c3e8cc1d4e01920d00de77a93eced6e9).
+2025-01-30 00:13:33,076 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:13:33,076 INFO root: ------
+2025-01-30 00:13:51,799 INFO root: Initialized likes list for member ID 795071753583984720.
+2025-01-30 00:13:51,799 INFO root: Likes cache saved.
+2025-01-30 00:13:51,800 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-30 00:13:52,109 INFO root: Ale liked Kira666's profile.
+2025-01-30 00:14:14,882 INFO root: Initialized likes list for member ID 361838641099571200.
+2025-01-30 00:14:14,883 INFO root: Likes cache saved.
+2025-01-30 00:14:14,884 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-30 00:14:15,139 INFO root: Kira666 liked Ale's profile.
+2025-01-30 00:14:16,062 INFO root: Notified Ale of a new match with Kira666.
+2025-01-30 00:14:16,063 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-30 00:22:51,820 INFO root: Profile cache loaded.
+2025-01-30 00:22:51,820 INFO root: Likes cache loaded.
+2025-01-30 00:22:51,822 INFO discord.client: logging in using static token
+2025-01-30 00:22:53,084 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 0dd67719e6f38183b8b4767528628275).
+2025-01-30 00:22:55,096 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:22:55,096 INFO root: ------
+2025-01-30 00:23:22,901 INFO root: Notified Ale of the broken match with Kira666.
+2025-01-30 00:36:54,451 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 00:36:54,451 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 00:36:54,452 INFO discord.client: logging in using static token
+2025-01-30 00:36:56,212 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 736f1b336c9cec3d58203b54e8259343).
+2025-01-30 00:36:58,224 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:36:58,224 INFO root: ------
+2025-01-30 00:37:04,426 INFO root: Generating profile for Ale
+2025-01-30 00:37:04,427 INFO root: Profile for Ale stored in cache.
+2025-01-30 00:37:04,428 INFO root: Profile cache updated.
+2025-01-30 00:37:11,322 INFO root: Generating profile for Kira666
+2025-01-30 00:37:11,322 INFO root: Profile for Kira666 stored in cache.
+2025-01-30 00:37:11,322 INFO root: Profile cache updated.
+2025-01-30 00:37:18,812 INFO root: Initialized likes list for member ID 795071753583984720.
+2025-01-30 00:37:18,813 INFO root: Likes cache saved.
+2025-01-30 00:37:18,813 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-30 00:37:19,010 INFO root: Ale liked Kira666's profile.
+2025-01-30 00:37:33,405 INFO root: Likes cache saved.
+2025-01-30 00:37:33,405 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-30 00:37:35,640 INFO root: Ale unliked Kira666's profile.
+2025-01-30 00:37:47,034 INFO root: Likes cache saved.
+2025-01-30 00:37:47,034 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-30 00:37:47,280 INFO root: Ale liked Kira666's profile.
+2025-01-30 00:38:09,347 INFO root: Initialized likes list for member ID 361838641099571200.
+2025-01-30 00:38:09,348 INFO root: Likes cache saved.
+2025-01-30 00:38:09,348 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-30 00:38:09,628 INFO root: Kira666 liked Ale's profile.
+2025-01-30 00:38:14,055 INFO root: Notified Ale of a new match with Kira666.
+2025-01-30 00:38:14,055 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-30 00:38:16,490 ERROR root: An error occurred: Command raised an exception: TypeError: 'NoneType' object is not iterable
+2025-01-30 00:38:27,057 ERROR root: An error occurred: Command raised an exception: TypeError: 'NoneType' object is not iterable
+2025-01-30 00:40:13,099 INFO root: Profile cache loaded.
+2025-01-30 00:40:13,099 INFO root: Likes cache loaded.
+2025-01-30 00:40:13,101 INFO discord.client: logging in using static token
+2025-01-30 00:40:14,034 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 04e784d83b1a6847a87671d41845746b).
+2025-01-30 00:40:16,049 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:40:16,049 INFO root: ------
+2025-01-30 00:40:26,252 INFO root: likers: {'795071753583984720'}
+2025-01-30 00:40:26,252 ERROR root: An error occurred: Command raised an exception: TypeError: 'NoneType' object is not iterable
+2025-01-30 00:40:58,393 INFO root: Profile cache loaded.
+2025-01-30 00:40:58,393 INFO root: Likes cache loaded.
+2025-01-30 00:40:58,395 INFO discord.client: logging in using static token
+2025-01-30 00:40:59,541 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 45399b6ab16b56fe16c3fcce19a04a6d).
+2025-01-30 00:41:01,543 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:41:01,543 INFO root: ------
+2025-01-30 00:41:03,351 INFO root: likers: {'795071753583984720'}
+2025-01-30 00:41:03,351 ERROR root: An error occurred: Command raised an exception: TypeError: 'NoneType' object is not iterable
+2025-01-30 00:41:12,630 INFO root: likers: {'795071753583984720'}
+2025-01-30 00:41:12,631 ERROR root: An error occurred: Command raised an exception: TypeError: 'NoneType' object is not iterable
+2025-01-30 00:41:37,533 INFO root: Profile cache loaded.
+2025-01-30 00:41:37,534 INFO root: Likes cache loaded.
+2025-01-30 00:41:37,535 INFO discord.client: logging in using static token
+2025-01-30 00:41:38,747 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8db7c5de6d80a2c648bc48f0a18eec75).
+2025-01-30 00:41:40,760 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 00:41:40,760 INFO root: ------
+2025-01-30 00:41:50,345 INFO root: likers: {'795071753583984720'}
+2025-01-30 00:41:50,345 INFO root: liked: {'795071753583984720'}
+2025-01-30 00:41:57,535 INFO root: Likes cache saved.
+2025-01-30 00:41:57,535 INFO root: Member ID 361838641099571200 unliked Member ID 795071753583984720.
+2025-01-30 00:41:57,802 INFO root: Ale unliked Kira666's profile.
+2025-01-30 00:41:58,432 INFO root: Notified Kira666 of the broken match with Ale.
+2025-01-30 00:42:02,118 INFO root: likers: {'795071753583984720'}
+2025-01-30 00:42:02,118 INFO root: liked: set()
+2025-01-30 00:42:08,551 INFO root: Likes cache saved.
+2025-01-30 00:42:08,551 INFO root: Member ID 361838641099571200 liked Member ID 795071753583984720.
+2025-01-30 00:42:08,817 INFO root: Ale liked Kira666's profile.
+2025-01-30 00:42:09,874 INFO root: Notified Kira666 of a new match with Ale.
+2025-01-30 00:42:09,875 INFO root: Notified Ale of a new match with Kira666.
+2025-01-30 00:43:51,490 INFO root: Likes cache saved.
+2025-01-30 00:43:51,490 INFO root: Member ID 795071753583984720 unliked Member ID 361838641099571200.
+2025-01-30 00:43:52,737 INFO root: Kira666 unliked Ale's profile.
+2025-01-30 00:43:53,103 INFO root: Notified Ale of the broken match with Kira666.
+2025-01-30 00:44:25,716 INFO root: likers: {'361838641099571200'}
+2025-01-30 00:44:25,716 INFO root: liked: set()
