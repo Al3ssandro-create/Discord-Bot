@@ -5,9 +5,9 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import logging
 import json
-import re
 import time  # For rate limiting
-
+from flask import Flask
+from threading import Thread
 # ---------------------------
 # Logging Configuration
 # ---------------------------
@@ -351,7 +351,17 @@ async def generate_profile_content(member):
     except Exception as e:
         logging.error(f"Error generating profile content for {member.display_name}: {e}")
         return None
+# ---------------------------
+# Flask Web Server Setup
+# ---------------------------
+app = Flask('')
 
+@app.route('/')
+def home():
+    return "I'm alive!"
+
+def run_flask():
+    app.run(host='0.0.0.0', port=8080)
 # ---------------------------
 # Discord Bot Events and Commands
 # ---------------------------
@@ -654,5 +664,18 @@ async def on_disconnect():
         json.dump(profile_cache, f, indent=4)
     logging.info("Profile and likes cache saved on disconnect.")
 
-# Run the bot
+# ---------------------------
+# Running Flask and Discord Bot
+# ---------------------------
+def keep_alive():
+    flask_thread = Thread(target=run_flask)
+    flask_thread.start()
+
+def run_flask():
+    app.run(host='0.0.0.0', port=8080)
+
+# Start the web server before running the bot
+keep_alive()
+
+# Run the Discord bot
 bot.run(TOKEN)
