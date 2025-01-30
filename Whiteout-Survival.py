@@ -201,7 +201,7 @@ intents = discord.Intents.default()
 intents.members = True           # Enables the bot to see server members
 intents.message_content = True   # Enables access to message content
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
 # ---------------------------
 # Rate Limiting Setup
