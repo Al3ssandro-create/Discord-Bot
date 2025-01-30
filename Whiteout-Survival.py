@@ -609,6 +609,67 @@ async def findmatches_command(ctx):
     embed.set_thumbnail(url=ctx.author.avatar.url if ctx.author.avatar else "https://via.placeholder.com/128")
     await ctx.send(embed=embed)
 
+@bot.command(name="help")
+async def help_command(ctx):
+    embed = discord.Embed(
+        title="📖 Bot Instructions",
+        description="Welcome to the Discord Matchmaking Bot! Here's how you can interact with me:",
+        color=discord.Color.blue()
+    )
+    
+    embed.add_field(
+        name="📌 **!profile [@User]**",
+        value="Generate or view a user's profile. If no user is mentioned, it defaults to your own profile.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="📌 **!myprofile**",
+        value="Manually generate or view your own profile.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="👍 **!like @User**",
+        value="Like another user's profile. If both users like each other, a mutual match is created!",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="👎 **!unlike @User**",
+        value="Unlike a user you have previously liked, potentially breaking a mutual match.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="💞 **!mymatches**",
+        value="View all your mutual matches.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="❤️ **!likes**",
+        value="See who has liked your profile.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="🔍 **!findmatches**",
+        value="Find potential matches based on existing likes.",
+        inline=False
+    )
+    
+    embed.add_field(
+        name="🏆 **!toplikes [number]**",
+        value="View the top profiles ranked by the number of likes they have received. You can specify the number of top profiles to display (default is 5).",
+        inline=False
+    )
+    
+    embed.set_footer(text="Use these commands to interact with the bot and enhance your Discord experience!")
+    
+    await ctx.send(embed=embed)
+
+
 # Command to list top profiles by likes
 @bot.command(name="toplikes")
 async def toplikes_command(ctx, number: int = 5):
