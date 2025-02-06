@@ -2091,3 +2091,2275 @@ KeyboardInterrupt
 2025-01-30 00:43:53,103 INFO root: Notified Ale of the broken match with Kira666.
 2025-01-30 00:44:25,716 INFO root: likers: {'361838641099571200'}
 2025-01-30 00:44:25,716 INFO root: liked: set()
+2025-01-30 16:01:33,596 INFO root: Profile cache loaded.
+2025-01-30 16:01:33,597 INFO root: Likes cache loaded.
+2025-01-30 16:01:33,600 INFO discord.client: logging in using static token
+2025-01-30 16:01:33,605 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 16:01:33,605 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 16:01:34,754 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8103985f12b7521f50431969df9f3943).
+2025-01-30 16:01:36,795 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 16:01:36,795 INFO root: ------
+2025-01-30 16:02:08,983 INFO root: Initialized likes list for member ID 1312513812095565887.
+2025-01-30 16:02:08,984 INFO root: Likes cache saved.
+2025-01-30 16:02:08,984 INFO root: Member ID 361838641099571200 liked Member ID 1312513812095565887.
+2025-01-30 16:02:09,294 INFO root: Alticcio liked 🌠 Fray  🌠's profile.
+2025-01-30 16:02:40,622 WARNING root: Member ID 361838641099571200 attempted to like Member ID 1312513812095565887 again.
+2025-01-30 16:02:41,036 INFO root: Alticcio attempted to like 🌠 Fray  🌠's profile again.
+2025-01-30 16:05:39,312 INFO root: Likes cache saved.
+2025-01-30 16:05:39,312 INFO root: Member ID 1092426055563870208 liked Member ID 1312513812095565887.
+2025-01-30 16:05:39,703 INFO root: THE POPE liked 🌠 Fray  🌠's profile.
+2025-01-30 16:05:51,089 INFO root: Likes cache saved.
+2025-01-30 16:05:51,089 INFO root: Member ID 795071753583984720 liked Member ID 1312513812095565887.
+2025-01-30 16:05:51,315 INFO root: Kira666 liked 🌠 Fray  🌠's profile.
+2025-01-30 16:06:09,319 INFO root: Likes cache saved.
+2025-01-30 16:06:09,319 INFO root: Member ID 795071753583984720 liked Member ID 361838641099571200.
+2025-01-30 16:06:09,629 INFO root: Kira666 liked Alticcio's profile.
+2025-01-30 16:06:10,646 INFO root: Notified Alticcio of a new match with Kira666.
+2025-01-30 16:06:10,647 INFO root: Notified Kira666 of a new match with Alticcio.
+2025-01-30 16:06:54,679 INFO root: Generating profile for #KRATOS#
+2025-01-30 16:06:54,680 INFO root: Profile for #KRATOS# stored in cache.
+2025-01-30 16:06:54,681 INFO root: Profile cache updated.
+2025-01-30 16:09:08,222 INFO root: Initialized likes list for member ID 1092426055563870208.
+2025-01-30 16:09:08,223 INFO root: Likes cache saved.
+2025-01-30 16:09:08,223 INFO root: Member ID 1312513812095565887 liked Member ID 1092426055563870208.
+2025-01-30 16:09:08,720 INFO root: 🌠 Fray  🌠 liked THE POPE's profile.
+2025-01-30 16:09:13,351 INFO root: Notified THE POPE of a new match with 🌠 Fray  🌠.
+2025-01-30 16:09:13,355 INFO root: Notified 🌠 Fray  🌠 of a new match with THE POPE.
+2025-01-30 16:10:07,580 INFO root: Initialized likes list for member ID 1020713592741433354.
+2025-01-30 16:10:07,581 INFO root: Likes cache saved.
+2025-01-30 16:10:07,581 INFO root: Member ID 1312513812095565887 liked Member ID 1020713592741433354.
+2025-01-30 16:10:07,925 INFO root: 🌠 Fray  🌠 liked Atlas's profile.
+2025-01-30 16:10:18,500 INFO root: Generating profile for Shiko
+2025-01-30 16:10:18,500 INFO root: Profile for Shiko stored in cache.
+2025-01-30 16:10:18,501 INFO root: Profile cache updated.
+2025-01-30 16:10:48,014 INFO root: Likes cache saved.
+2025-01-30 16:10:48,014 INFO root: Member ID 1312513812095565887 liked Member ID 795071753583984720.
+2025-01-30 16:10:48,465 INFO root: 🌠 Fray  🌠 liked Kira666's profile.
+2025-01-30 16:10:49,127 INFO root: Notified Kira666 of a new match with 🌠 Fray  🌠.
+2025-01-30 16:10:49,127 INFO root: Notified 🌠 Fray  🌠 of a new match with Kira666.
+2025-01-30 16:11:01,659 INFO root: Generating profile for Spinx
+2025-01-30 16:11:01,660 INFO root: Profile for Spinx stored in cache.
+2025-01-30 16:11:01,661 INFO root: Profile cache updated.
+2025-01-30 16:11:17,539 INFO root: Generating profile for BERSERKER THOR
+2025-01-30 16:11:17,540 INFO root: Profile for BERSERKER THOR stored in cache.
+2025-01-30 16:11:17,541 INFO root: Profile cache updated.
+2025-01-30 16:12:04,517 INFO root: Initialized likes list for member ID 1200695503067807835.
+2025-01-30 16:12:04,517 INFO root: Likes cache saved.
+2025-01-30 16:12:04,518 INFO root: Member ID 795071753583984720 liked Member ID 1200695503067807835.
+2025-01-30 16:12:04,846 INFO root: Kira666 liked Spinx's profile.
+2025-01-30 16:45:53,814 INFO root: Profile cache loaded.
+2025-01-30 16:45:53,814 INFO root: Likes cache loaded.
+2025-01-30 16:45:53,817 INFO discord.client: logging in using static token
+2025-01-30 16:45:53,820 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 16:45:53,820 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 16:45:55,027 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 16e409a56f5d13379dd4c1e39acdb96b).
+2025-01-30 16:45:57,051 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 16:45:57,051 INFO root: ------
+2025-01-30 16:46:18,311 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 16:46:18,311 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 16:46:18,314 INFO discord.client: logging in using static token
+2025-01-30 16:46:18,317 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 16:46:18,318 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 16:46:19,347 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 2ca9b60659e6932ef0ab8594d9095815).
+2025-01-30 16:46:21,358 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 16:46:21,358 INFO root: ------
+2025-01-30 16:49:05,226 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 16:49:05,227 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 16:49:05,230 INFO discord.client: logging in using static token
+2025-01-30 16:49:05,234 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 16:49:05,234 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 16:49:06,237 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6e78bdcf3c581b36b625fc0ff2f00e1e).
+2025-01-30 16:49:08,696 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 16:49:08,696 INFO root: ------
+2025-01-30 16:54:51,795 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 16:54:51,795 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 16:54:51,798 INFO discord.client: logging in using static token
+2025-01-30 16:54:51,801 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 16:54:51,801 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 16:54:53,069 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 0326ef6a45d1d497fa0315db506c8a14).
+2025-01-30 16:54:55,425 INFO root: ✅ Slash commands synced!
+2025-01-30 16:54:55,425 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 16:54:55,484 INFO root: ------
+2025-01-30 16:58:20,635 ERROR discord.app_commands.tree: Ignoring exception in command 'help'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 723, in help_command
+    await ctx.send(embed=embed)
+AttributeError: 'Interaction' object has no attribute 'send'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'help' raised an exception: AttributeError: 'Interaction' object has no attribute 'send'
+2025-01-30 17:01:01,727 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:01:01,727 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:01:01,731 INFO discord.client: logging in using static token
+2025-01-30 17:01:01,733 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:01:01,734 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:01:02,857 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 2f8088029f5f438584d656adc95c24b2).
+2025-01-30 17:01:05,296 INFO root: ✅ Slash commands synced!
+2025-01-30 17:01:05,297 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:01:05,297 INFO root: ------
+2025-01-30 17:17:50,974 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:17:50,974 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:17:50,977 INFO discord.client: logging in using static token
+2025-01-30 17:17:50,979 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:17:50,980 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:17:52,371 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 7e465174e65bc9f67ab1ce9d779309b5).
+2025-01-30 17:17:54,764 INFO root: ✅ Slash commands synced!
+2025-01-30 17:17:54,765 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:17:54,824 INFO root: ------
+2025-01-30 17:18:46,066 ERROR discord.app_commands.tree: Ignoring exception in command 'like'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 534, in like_command
+    save_cache()
+NameError: name 'save_cache' is not defined. Did you mean: 'likes_cache'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'like' raised an exception: NameError: name 'save_cache' is not defined
+2025-01-30 17:19:08,400 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:19:08,401 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:19:08,403 INFO discord.client: logging in using static token
+2025-01-30 17:19:08,406 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:19:08,407 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:19:09,733 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8c9743e97b5b1f2a14f4b652664503a6).
+2025-01-30 17:19:12,078 INFO root: ✅ Slash commands synced!
+2025-01-30 17:19:12,078 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:19:12,079 INFO root: ------
+2025-01-30 17:29:31,363 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:29:31,363 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:29:31,366 INFO discord.client: logging in using static token
+2025-01-30 17:29:31,369 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:29:31,369 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:29:32,766 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8246374981675e9003d2a5fb46e52d84).
+2025-01-30 17:29:35,106 INFO root: ✅ Slash commands synced!
+2025-01-30 17:29:35,107 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:29:35,107 INFO root: ------
+2025-01-30 17:29:57,920 INFO root: Generating profile for Ale
+2025-01-30 17:29:57,921 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 432, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 400, in generate_profile_with_gpt
+    response = openai.ChatCompletion.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-30 17:34:26,380 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:34:26,380 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:34:26,385 INFO discord.client: logging in using static token
+2025-01-30 17:34:26,388 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:34:26,389 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:34:27,383 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 02cc095ecf37e7467fe53a7dcc566f6e).
+2025-01-30 17:34:30,511 INFO root: ✅ Slash commands synced!
+2025-01-30 17:34:30,511 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:34:30,511 INFO root: ------
+2025-01-30 17:34:37,983 INFO root: Generating profile for Ale
+2025-01-30 17:34:37,983 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.ChatCompletion.create(
+AttributeError: 'Chat' object has no attribute 'ChatCompletion'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'Chat' object has no attribute 'ChatCompletion'
+2025-01-30 17:35:11,702 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:35:11,702 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:35:11,705 INFO discord.client: logging in using static token
+2025-01-30 17:35:11,708 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:35:11,709 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:35:12,902 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f2ccc8586205151740a521ddabea34d4).
+2025-01-30 17:35:15,261 INFO root: ✅ Slash commands synced!
+2025-01-30 17:35:15,261 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:35:15,261 INFO root: ------
+2025-01-30 17:35:27,855 INFO root: Generating profile for Ale
+2025-01-30 17:35:28,778 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:35:28,779 INFO openai._base_client: Retrying request to /chat/completions in 0.407359 seconds
+2025-01-30 17:35:29,492 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:35:29,493 INFO openai._base_client: Retrying request to /chat/completions in 0.830398 seconds
+2025-01-30 17:35:30,535 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:35:30,536 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 17:40:11,702 WARNING discord.gateway: Can't keep up, shard ID None websocket is 10.2s behind.
+2025-01-30 17:40:11,703 WARNING discord.gateway: Can't keep up, shard ID None websocket is 10.2s behind.
+2025-01-30 17:40:59,769 WARNING discord.gateway: Can't keep up, shard ID None websocket is 17.1s behind.
+2025-01-30 17:45:03,533 INFO root: Generating profile for Ale
+2025-01-30 17:45:03,944 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:03,944 INFO openai._base_client: Retrying request to /chat/completions in 0.388145 seconds
+2025-01-30 17:45:04,559 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:04,560 INFO openai._base_client: Retrying request to /chat/completions in 0.773177 seconds
+2025-01-30 17:45:05,580 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:05,581 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 17:45:33,369 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:45:33,369 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:45:33,373 INFO discord.client: logging in using static token
+2025-01-30 17:45:33,377 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:45:33,377 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:45:34,695 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c6825367802ece3c94e9523f14ec6613).
+2025-01-30 17:45:37,428 INFO root: ✅ Slash commands synced!
+2025-01-30 17:45:37,429 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:45:37,429 INFO root: ------
+2025-01-30 17:45:41,214 INFO root: Generating profile for Ale
+2025-01-30 17:45:41,524 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:41,525 INFO openai._base_client: Retrying request to /chat/completions in 0.451102 seconds
+2025-01-30 17:45:42,184 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:42,185 INFO openai._base_client: Retrying request to /chat/completions in 0.911610 seconds
+2025-01-30 17:45:43,367 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:45:43,370 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 17:47:18,039 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:47:18,039 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:47:18,042 INFO discord.client: logging in using static token
+2025-01-30 17:47:18,045 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:47:18,045 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:47:19,319 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: a3533b50138957ba533c2a206b74ac1e).
+2025-01-30 17:47:21,671 INFO root: ✅ Slash commands synced!
+2025-01-30 17:47:21,672 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:47:21,672 INFO root: ------
+2025-01-30 17:47:25,596 INFO root: Generating profile for Ale
+2025-01-30 17:47:25,972 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-01-30 17:47:25,973 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4o` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4o` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-01-30 17:49:46,424 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:49:46,424 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:49:46,427 INFO discord.client: logging in using static token
+2025-01-30 17:49:46,430 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:49:46,431 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:49:47,622 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 15b4114ca973f092a2023b78ddf7113d).
+2025-01-30 17:49:50,254 INFO root: ✅ Slash commands synced!
+2025-01-30 17:49:50,254 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:49:50,255 INFO root: ------
+2025-01-30 17:49:53,940 INFO root: Generating profile for Ale
+2025-01-30 17:49:54,254 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:49:54,255 INFO openai._base_client: Retrying request to /chat/completions in 0.481523 seconds
+2025-01-30 17:49:54,946 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:49:54,947 INFO openai._base_client: Retrying request to /chat/completions in 0.863886 seconds
+2025-01-30 17:49:56,090 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 17:49:56,093 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 401, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 17:57:46,796 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:57:46,796 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:57:46,799 INFO discord.client: logging in using static token
+2025-01-30 17:57:46,802 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:57:46,802 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:57:48,332 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6b92137111016efdf9757ce9f7be72df).
+2025-01-30 17:57:50,719 INFO root: ✅ Slash commands synced!
+2025-01-30 17:57:50,719 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:57:50,719 INFO root: ------
+2025-01-30 17:57:57,538 INFO root: Generating profile for Ale
+2025-01-30 17:57:57,538 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 432, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 400, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+NameError: name 'client' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: NameError: name 'client' is not defined
+2025-01-30 17:58:48,981 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 17:58:48,981 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 17:58:48,984 INFO discord.client: logging in using static token
+2025-01-30 17:58:48,988 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 17:58:48,988 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 17:58:50,320 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6c806fe8cd04ac67caef37f825c62bb7).
+2025-01-30 17:58:52,669 INFO root: ✅ Slash commands synced!
+2025-01-30 17:58:52,669 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 17:58:52,669 INFO root: ------
+2025-01-30 17:58:59,313 INFO root: Generating profile for Ale
+2025-01-30 17:59:01,640 INFO httpx: HTTP Request: POST http://localhost:3040/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 17:59:01,787 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 432, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 405, in generate_profile_with_gpt
+    return json.loads(response["choices"][0]["message"]["content"])
+TypeError: 'ChatCompletion' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: TypeError: 'ChatCompletion' object is not subscriptable
+2025-01-30 18:02:45,254 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:02:45,254 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:02:45,257 INFO discord.client: logging in using static token
+2025-01-30 18:02:45,260 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:02:45,261 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:02:46,697 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 4bfd56b5b2be34b3a5392082f4fb1685).
+2025-01-30 18:02:49,402 INFO root: ✅ Slash commands synced!
+2025-01-30 18:02:49,402 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:02:49,402 INFO root: ------
+2025-01-30 18:02:50,373 INFO root: Generating profile for Ale
+2025-01-30 18:02:51,984 INFO httpx: HTTP Request: POST http://localhost:3040/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 18:02:52,057 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 432, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 405, in generate_profile_with_gpt
+    return json.loads(response.choices[0].message.content)
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: TypeError: 'NoneType' object is not subscriptable
+2025-01-30 18:03:42,116 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:03:42,116 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:03:42,119 INFO discord.client: logging in using static token
+2025-01-30 18:03:42,123 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:03:42,123 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:03:43,283 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: bb110ee78dbb34a284515a381e33927f).
+2025-01-30 18:03:45,663 INFO root: ✅ Slash commands synced!
+2025-01-30 18:03:45,664 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:03:45,664 INFO root: ------
+2025-01-30 18:03:47,276 INFO root: Generating profile for Ale
+2025-01-30 18:03:48,691 INFO httpx: HTTP Request: POST http://localhost:3040/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 18:03:48,760 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 433, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 405, in generate_profile_with_gpt
+    print(response.choices[0].message.content)
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: TypeError: 'NoneType' object is not subscriptable
+2025-01-30 18:05:00,898 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:05:00,898 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:05:00,901 INFO discord.client: logging in using static token
+2025-01-30 18:05:00,903 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:05:00,904 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:05:02,267 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 58a1d631494d3711e586a068bee548e4).
+2025-01-30 18:05:04,676 INFO root: ✅ Slash commands synced!
+2025-01-30 18:05:04,677 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:05:04,677 INFO root: ------
+2025-01-30 18:05:06,739 INFO root: Generating profile for Ale
+2025-01-30 18:05:08,382 INFO httpx: HTTP Request: POST http://localhost:3040/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 18:05:08,439 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 435, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 405, in generate_profile_with_gpt
+    if response.choices[0].message.content is None:
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: TypeError: 'NoneType' object is not subscriptable
+2025-01-30 18:06:40,740 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:06:40,740 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:06:40,743 INFO discord.client: logging in using static token
+2025-01-30 18:06:40,747 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:06:40,747 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:06:41,852 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 515bc64379a8c2fa82b99c3478c18ae5).
+2025-01-30 18:06:44,249 INFO root: ✅ Slash commands synced!
+2025-01-30 18:06:44,249 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:06:44,249 INFO root: ------
+2025-01-30 18:06:44,916 INFO root: Generating profile for Ale
+2025-01-30 18:06:46,699 INFO httpx: HTTP Request: POST http://localhost:3040/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 18:06:46,701 INFO root: Profile cache saved.
+2025-01-30 18:06:46,702 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 457, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 18:08:29,261 INFO root: Profile cache loaded.
+2025-01-30 18:08:38,415 INFO root: Profile cache loaded.
+2025-01-30 18:08:59,536 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:08:59,536 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:08:59,543 INFO discord.client: logging in using static token
+2025-01-30 18:08:59,552 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:08:59,552 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:09:00,899 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 5aaa3d0d52a7324191821cbded79aa57).
+2025-01-30 18:09:03,341 INFO root: ✅ Slash commands synced!
+2025-01-30 18:09:03,342 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:09:03,342 INFO root: ------
+2025-01-30 18:09:10,248 INFO root: Generating profile for Ale
+2025-01-30 18:09:10,283 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 451, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 399, in generate_profile_with_gpt
+    response = openai.chat.completions.create(
+AttributeError: module 'openai' has no attribute 'chat'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: module 'openai' has no attribute 'chat'
+2025-01-30 18:32:37,844 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:32:37,844 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:32:37,850 INFO discord.client: logging in using static token
+2025-01-30 18:32:37,861 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:32:37,861 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:32:38,900 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 2c2c0b96ea9976910eda19839c47b3d1).
+2025-01-30 18:32:41,228 INFO root: ✅ Slash commands synced!
+2025-01-30 18:32:41,229 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:32:41,229 INFO root: ------
+2025-01-30 18:32:48,099 INFO root: Generating profile for Ale
+2025-01-30 18:32:48,099 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 451, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 399, in generate_profile_with_gpt
+    response = openai.chat.completions.create(
+AttributeError: module 'openai' has no attribute 'chat'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: module 'openai' has no attribute 'chat'
+2025-01-30 18:38:37,305 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 18:38:37,305 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 18:38:37,308 INFO discord.client: logging in using static token
+2025-01-30 18:38:37,310 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:38:37,310 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:38:38,423 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 021996b922d3a10e121941f0026058d6).
+2025-01-30 18:38:40,753 INFO root: ✅ Slash commands synced!
+2025-01-30 18:38:40,753 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:38:40,753 INFO root: ------
+2025-01-30 18:38:44,948 INFO root: Generating profile for Ale
+2025-01-30 18:38:45,768 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 18:38:45,768 INFO openai._base_client: Retrying request to /chat/completions in 0.436710 seconds
+2025-01-30 18:38:46,516 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 18:38:46,516 INFO openai._base_client: Retrying request to /chat/completions in 0.764088 seconds
+2025-01-30 18:38:47,490 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-01-30 18:38:47,493 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 434, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 402, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1049, in _request
+    return self._retry_request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1098, in _retry_request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 18:43:31,471 ERROR discord.client: Attempting a reconnect in 0.16s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 667, in connect
+    await self.ws.poll_event()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 648, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-01-30 18:43:31,474 INFO root: Likes cache saved.
+2025-01-30 18:43:31,475 INFO root: Profile and likes cache saved on disconnect.
+2025-01-30 18:43:32,212 INFO discord.gateway: Shard ID None has successfully RESUMED session 021996b922d3a10e121941f0026058d6.
+2025-01-30 18:54:46,864 INFO root: Profile cache loaded.
+2025-01-30 18:54:46,864 INFO root: Likes cache loaded.
+2025-01-30 18:54:46,867 INFO discord.client: logging in using static token
+2025-01-30 18:54:46,869 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 18:54:46,869 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 18:54:48,060 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 50fa7f7085b4b995c182813fbcb3dfbe).
+2025-01-30 18:54:50,576 INFO root: ✅ Slash commands synced!
+2025-01-30 18:54:50,577 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 18:54:50,577 INFO root: ------
+2025-01-30 18:54:51,371 INFO root: Generating profile for Ale
+2025-01-30 18:54:51,780 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-01-30 18:54:51,781 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 434, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 402, in generate_profile_with_gpt
+    response = client.chat.completions.create(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 850, in create
+    return self._post(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1283, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 960, in request
+    return self._request(
+  File "/home/ale/.local/lib/python3.10/site-packages/openai/_base_client.py", line 1064, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-ijklm*******************************mnop. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-ijklm*******************************mnop. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-01-30 19:04:33,429 INFO root: Profile cache loaded.
+2025-01-30 19:04:33,429 INFO root: Likes cache loaded.
+2025-01-30 19:04:33,433 INFO discord.client: logging in using static token
+2025-01-30 19:04:33,434 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:04:33,434 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:04:34,589 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 60cfa36d97221c92aec1dcd0bf9fc08b).
+2025-01-30 19:04:37,038 INFO root: ✅ Slash commands synced!
+2025-01-30 19:04:37,038 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:04:37,039 INFO root: ------
+2025-01-30 19:04:42,910 INFO root: Generating profile for Ale
+2025-01-30 19:04:42,910 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 456, in profile
+    profile_cache[member_id] = await generate_profile_with_gpt(member.display_name)
+NameError: name 'generate_profile_with_gpt' is not defined. Did you mean: 'generate_profile_with_groq'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: NameError: name 'generate_profile_with_gpt' is not defined
+2025-01-30 19:05:15,576 INFO root: Profile cache loaded.
+2025-01-30 19:05:15,576 INFO root: Likes cache loaded.
+2025-01-30 19:05:15,579 INFO discord.client: logging in using static token
+2025-01-30 19:05:15,582 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:05:15,582 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:05:18,499 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 5b005bf9d493d71c83f8a3f43ac03406).
+2025-01-30 19:05:20,972 INFO root: ✅ Slash commands synced!
+2025-01-30 19:05:20,972 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:05:20,972 INFO root: ------
+2025-01-30 19:05:23,909 INFO root: Generating profile for Ale
+2025-01-30 19:05:24,245 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:05:24,245 INFO root: Profile cache saved.
+2025-01-30 19:05:24,245 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 461, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:05:51,547 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:05:51,547 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:05:51,550 INFO discord.client: logging in using static token
+2025-01-30 19:05:51,552 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:05:51,552 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:05:52,638 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: b273da5beb110c17a7775f4c814b719f).
+2025-01-30 19:05:54,967 INFO root: ✅ Slash commands synced!
+2025-01-30 19:05:54,967 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:05:54,967 INFO root: ------
+2025-01-30 19:06:00,626 INFO root: Generating profile for Ale
+2025-01-30 19:06:01,036 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:06:01,038 INFO root: Profile cache saved.
+2025-01-30 19:06:01,038 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 461, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:07:10,788 INFO root: Profile cache loaded.
+2025-01-30 19:07:24,196 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:07:24,196 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:07:24,200 INFO discord.client: logging in using static token
+2025-01-30 19:07:24,202 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:07:24,202 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:07:25,429 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: cdf9751966f609a7cc03073304d7cf6c).
+2025-01-30 19:07:27,842 INFO root: ✅ Slash commands synced!
+2025-01-30 19:07:27,843 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:07:27,843 INFO root: ------
+2025-01-30 19:07:28,210 INFO root: Generating profile for Ale
+2025-01-30 19:07:28,457 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:07:28,457 INFO root: Profile cache saved.
+2025-01-30 19:07:28,458 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 462, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:09:56,730 INFO root: Profile cache loaded.
+2025-01-30 19:10:02,125 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:10:02,125 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:10:02,129 INFO discord.client: logging in using static token
+2025-01-30 19:10:02,130 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:10:02,130 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:10:03,380 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6c2dd985bb2bca3e3e4ed49f4df04a51).
+2025-01-30 19:10:05,741 INFO root: ✅ Slash commands synced!
+2025-01-30 19:10:05,741 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:10:05,741 INFO root: ------
+2025-01-30 19:10:06,563 INFO root: Generating profile for Ale
+2025-01-30 19:10:06,862 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:10:06,862 INFO root: Profile cache saved.
+2025-01-30 19:10:06,863 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 462, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:14:48,433 INFO root: Profile cache loaded.
+2025-01-30 19:14:55,975 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:14:55,975 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:14:55,979 INFO discord.client: logging in using static token
+2025-01-30 19:14:55,980 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:14:55,980 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:14:57,218 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 329601016c6fb25ddaed162e8c7dd1b6).
+2025-01-30 19:14:59,529 INFO root: ✅ Slash commands synced!
+2025-01-30 19:14:59,530 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:14:59,530 INFO root: ------
+2025-01-30 19:15:04,654 INFO root: Generating profile for Ale
+2025-01-30 19:15:04,961 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:15:04,962 INFO root: Profile cache saved.
+2025-01-30 19:15:04,962 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 462, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:23:51,515 INFO root: Profile cache loaded.
+2025-01-30 19:24:00,062 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:24:00,062 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:24:00,065 INFO discord.client: logging in using static token
+2025-01-30 19:24:00,067 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:24:00,067 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:24:01,626 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 69fb1f9e18f2bbed37628affd98c4d8f).
+2025-01-30 19:24:04,097 INFO root: ✅ Slash commands synced!
+2025-01-30 19:24:04,097 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:24:04,097 INFO root: ------
+2025-01-30 19:24:05,838 INFO root: Generating profile for Ale
+2025-01-30 19:24:06,355 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:24:06,355 INFO root: Profile cache saved.
+2025-01-30 19:24:06,356 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 461, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:28:19,083 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:28:19,083 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:28:19,086 INFO discord.client: logging in using static token
+2025-01-30 19:28:19,088 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:28:19,088 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:28:20,154 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8c5ebaa47d9a3806951e2b154e11d590).
+2025-01-30 19:28:22,627 INFO root: ✅ Slash commands synced!
+2025-01-30 19:28:22,628 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:28:22,628 INFO root: ------
+2025-01-30 19:28:23,858 INFO root: Generating profile for Ale
+2025-01-30 19:28:24,196 ERROR root: Groq API request failed: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:28:24,197 INFO root: Profile cache saved.
+2025-01-30 19:28:24,197 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 459, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:50:27,786 INFO root: Profile cache loaded.
+2025-01-30 19:50:35,058 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:50:35,058 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:50:35,061 INFO discord.client: logging in using static token
+2025-01-30 19:50:35,062 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:50:35,063 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:50:36,476 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: ebce1ecf8ff58b511c2f6f4d9937c9e0).
+2025-01-30 19:50:38,929 INFO root: ✅ Slash commands synced!
+2025-01-30 19:50:38,929 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:50:38,929 INFO root: ------
+2025-01-30 19:50:42,705 INFO root: Generating profile for Ale
+2025-01-30 19:50:43,004 ERROR root: Failed to fetch profile: 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-30 19:50:43,004 INFO root: Profile cache saved.
+2025-01-30 19:50:43,004 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 455, in profile
+    for key, value in profile_data.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'NoneType' object has no attribute 'items'
+2025-01-30 19:51:57,323 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:51:57,323 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:51:57,327 INFO discord.client: logging in using static token
+2025-01-30 19:51:57,329 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:51:57,329 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:51:58,466 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: bb18b3844f643cd5329139e764f45029).
+2025-01-30 19:52:00,829 INFO root: ✅ Slash commands synced!
+2025-01-30 19:52:00,830 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:52:00,830 INFO root: ------
+2025-01-30 19:52:05,864 INFO root: Generating profile for Ale
+2025-01-30 19:52:10,866 INFO root: {'id': 'chatcmpl-bc38a728-01c8-486e-aa7c-4641885ff348', 'object': 'chat.completion', 'created': 1738263129, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```json\n{\n  "name": "Ale",\n  "dating_me_like": "being on a rollercoaster ride of laughter and adventure",\n  "way_to_heart": "through good food, great conversation, and a passion for life",\n  "known_for": "my infectious smile and ability to make anyone feel at ease",\n  "spontaneous_thing": "booking a last-minute ticket to a music festival in another city",\n  "geek_out_on": "science fiction novels and old movies",\n  "age": 28,\n  "job": "graphic designer",\n  "funny_fact": "I can recite the entire script of my favorite movie from memory, but I still can\'t cook a decent meal to save my life"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 3.619115424, 'prompt_tokens': 150, 'prompt_time': 0.029525736, 'completion_tokens': 159, 'completion_time': 0.799788582, 'total_tokens': 309, 'total_time': 0.829314318}, 'system_fingerprint': 'fp_3884478861', 'x_groq': {'id': 'req_01jjw8wr84e208t6jan56a76jv'}}
+2025-01-30 19:52:10,868 INFO root: Profile cache saved.
+2025-01-30 19:52:10,868 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 455, in profile
+    for key, value in profile_data.items():
+AttributeError: 'str' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'str' object has no attribute 'items'
+2025-01-30 19:56:15,052 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 19:56:15,053 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 19:56:15,056 INFO discord.client: logging in using static token
+2025-01-30 19:56:15,058 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 19:56:15,058 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 19:56:16,155 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: ebc298a48d9b26a4685180d9328ed8c0).
+2025-01-30 19:56:18,598 INFO root: ✅ Slash commands synced!
+2025-01-30 19:56:18,598 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 19:56:18,598 INFO root: ------
+2025-01-30 19:56:21,585 INFO root: Generating profile for Ale
+2025-01-30 19:56:23,194 INFO root: {'id': 'chatcmpl-07ddece9-0be6-44ab-a15d-1977145fb201', 'object': 'chat.completion', 'created': 1738263382, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```json\n{\n  "name": "Ale",\n  "dating_me_like": "going on a thrilling adventure, full of laughter and unexpected surprises",\n  "way_to_heart": "through good food, meaningful conversations, and a passion for life",\n  "known_for": "my infectious smile and ability to make anyone feel at ease",\n  "spontaneous_thing": "booking a last-minute flight to a foreign country with no plans whatsoever",\n  "geek_out_on": "science fiction novels, old movies, and learning new programming languages",\n  "age": 28,\n  "job": "Software Engineer",\n  "funny_fact": "I can recite the entire script of my favorite movie from memory, and I\'m not ashamed to admit it"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.019643931, 'prompt_tokens': 150, 'prompt_time': 0.025063457, 'completion_tokens': 162, 'completion_time': 0.589090909, 'total_tokens': 312, 'total_time': 0.614154366}, 'system_fingerprint': 'fp_fcc3b74982', 'x_groq': {'id': 'req_01jjw94jeafverpcrk9n9ec970'}}
+2025-01-30 19:56:23,194 INFO root: Profile cache saved.
+2025-01-30 19:56:23,194 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 456, in profile
+    for key, value in profile_data.items():
+AttributeError: 'str' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'str' object has no attribute 'items'
+2025-01-30 20:08:11,224 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:08:11,225 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:08:11,228 INFO discord.client: logging in using static token
+2025-01-30 20:08:11,229 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:08:11,229 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:08:12,505 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 24543215950e3f057ad7d8682f063408).
+2025-01-30 20:08:14,982 INFO root: ✅ Slash commands synced!
+2025-01-30 20:08:14,982 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:08:14,982 INFO root: ------
+2025-01-30 20:08:18,138 INFO root: Generating profile for Ale
+2025-01-30 20:08:19,277 INFO root: {'id': 'chatcmpl-a4a32ee3-afa0-4258-a66a-c1a7f1f53222', 'object': 'chat.completion', 'created': 1738264098, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```json\n{\n  "name": "Ale",\n  "dating_me_like": "going on a wild adventure, full of surprises and laughter",\n  "way_to_heart": "through good food, great music, and even better company",\n  "known_for": "my sense of humor and ability to make anyone smile",\n  "spontaneous_thing": "booking a last-minute ticket to a music festival in another city",\n  "geek_out_on": "science fiction books and old video games",\n  "age": 28,\n  "job": "software engineer",\n  "funny_fact": "I can recite the entire script of my favorite movie from memory, but I still can\'t cook a decent cup of coffee"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.036833886999999996, 'prompt_tokens': 150, 'prompt_time': 0.017826911, 'completion_tokens': 156, 'completion_time': 0.567272727, 'total_tokens': 306, 'total_time': 0.585099638}, 'system_fingerprint': 'fp_4196e754db', 'x_groq': {'id': 'req_01jjw9tdqsebfr7t7ersbazw1f'}}
+2025-01-30 20:08:19,277 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 453, in profile
+    profile_cache[member_id] = json.loads(profile_data)  # Ensure it's a dict
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-01-30 20:11:44,954 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:11:44,954 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:11:44,958 INFO discord.client: logging in using static token
+2025-01-30 20:11:44,960 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:11:44,960 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:11:46,209 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 5df4c8ffc8b4cbd8f1573f3d42495bbe).
+2025-01-30 20:11:48,490 INFO root: ✅ Slash commands synced!
+2025-01-30 20:11:48,490 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:11:48,491 INFO root: ------
+2025-01-30 20:11:51,030 INFO root: Generating profile for Ale
+2025-01-30 20:11:52,259 INFO root: API call successful, processing data.
+2025-01-30 20:11:52,260 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 457, in profile
+    profile_cache[member_id] = json.loads(profile_data)  # Ensure it's a dict
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-01-30 20:13:10,346 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:13:10,346 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:13:10,350 INFO discord.client: logging in using static token
+2025-01-30 20:13:10,352 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:13:10,353 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:13:11,548 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 0cf961e4d82ce308f50a136f33130d80).
+2025-01-30 20:13:14,069 INFO root: ✅ Slash commands synced!
+2025-01-30 20:13:14,069 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:13:14,069 INFO root: ------
+2025-01-30 20:13:17,568 INFO root: API call successful, processing data.
+2025-01-30 20:13:17,569 INFO root: Profile cache saved.
+2025-01-30 20:13:17,570 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 462, in profile
+    for key, value in profile_data.items():
+AttributeError: 'str' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: AttributeError: 'str' object has no attribute 'items'
+2025-01-30 20:16:00,767 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:16:00,767 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:16:00,770 INFO discord.client: logging in using static token
+2025-01-30 20:16:00,773 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:16:00,773 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:16:02,011 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 2c8e42f728d192790ebdc07d6e2bbbc3).
+2025-01-30 20:16:05,126 ERROR root: JSON decoding failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 20:16:05,127 INFO root: ✅ Slash commands synced!
+2025-01-30 20:16:05,127 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:16:05,128 INFO root: ------
+2025-01-30 20:16:18,693 ERROR root: JSON decoding failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 20:18:12,169 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:18:12,169 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:18:12,172 INFO discord.client: logging in using static token
+2025-01-30 20:18:12,175 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:18:12,175 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:18:13,345 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: ecd8edafe95c434ec3e46f093b196b31).
+2025-01-30 20:18:15,879 INFO root: ✅ Slash commands synced!
+2025-01-30 20:18:15,879 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:18:15,879 INFO root: ------
+2025-01-30 20:18:17,935 INFO root: Profile generation response: {'id': 'chatcmpl-13ae3b31-987e-46e8-b483-0f40f20af0fc', 'object': 'chat.completion', 'created': 1738264697, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```json\n{\n    "name": "Ale",\n    "dating_me_like": "dating a hopeless romantic who will plan surprise getaways and cook your favorite meals",\n    "way_to_heart": "through good conversation, laughter, and a shared love of adventure",\n    "known_for": "my sense of humor and ability to make people feel at ease",\n    "spontaneous_thing": "booking a last-minute ticket to a music festival in another city",\n    "geek_out_on": "science fiction novels and old movies",\n    "age": 28,\n    "job": "graphic designer",\n    "funny_fact": "I can recite the entire script of my favorite movie from memory, but I still can\'t cook ramen noodles without burning them"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.551672754, 'prompt_tokens': 150, 'prompt_time': 0.028031767, 'completion_tokens': 162, 'completion_time': 0.789887529, 'total_tokens': 312, 'total_time': 0.817919296}, 'system_fingerprint': 'fp_3884478861', 'x_groq': {'id': 'req_01jjwacnkvehraw715x7pz7ap1'}}
+2025-01-30 20:18:17,935 ERROR root: JSON decoding failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 20:21:20,166 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:21:20,166 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:21:20,170 INFO discord.client: logging in using static token
+2025-01-30 20:21:20,172 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:21:20,172 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:21:21,310 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c85ffe64e1672d1376118381f215055a).
+2025-01-30 20:21:23,657 INFO root: ✅ Slash commands synced!
+2025-01-30 20:21:23,657 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:21:23,657 INFO root: ------
+2025-01-30 20:22:13,835 INFO root: Profile cache saved.
+2025-01-30 20:24:12,681 INFO root: Profile cache saved.
+2025-01-30 20:25:06,471 INFO root: Profile cache saved.
+2025-01-30 20:36:00,294 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:36:00,295 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:36:00,299 INFO discord.client: logging in using static token
+2025-01-30 20:36:00,300 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:36:00,300 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:36:01,466 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: fc4cad609b4d419aca465e1c9f30faec).
+2025-01-30 20:36:03,973 INFO root: ✅ Slash commands synced!
+2025-01-30 20:36:03,974 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:36:03,974 INFO root: ------
+2025-01-30 20:36:15,218 ERROR root: Failed to extract or parse JSON from response: list index out of range
+2025-01-30 20:37:08,591 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:37:08,591 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:37:08,595 INFO discord.client: logging in using static token
+2025-01-30 20:37:08,596 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:37:08,596 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:37:09,871 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 460b74eaf0268143f21e67aa073cda71).
+2025-01-30 20:37:12,481 INFO root: ✅ Slash commands synced!
+2025-01-30 20:37:12,481 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:37:12,481 INFO root: ------
+2025-01-30 20:37:51,503 INFO root: Profile response: {'id': 'chatcmpl-23d66350-b625-4767-b68e-209c9b106596', 'object': 'chat.completion', 'created': 1738265870, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```\n{\n  "name": "Berserker Thor",\n  "dating_me_like": "riding a thunderstorm, unpredictable and exhilarating, with flashes of lightning-fast wit and a chance of spontaneous adventures",\n  "way_to_heart": "through battles won and mead shared, with a healthy dose of respect for the gods and a willingness to take on the giants of Jotunheim",\n  "known_for": "unleashing the fury of the Nine Realms on the battlefield andmy uncanny ability to wield Mjolnir, the mighty hammer",\n  "spontaneous_thing": "charging into battle against the giants without a plan, fueled by rage and a desire to protect Asgard",\n  "geek_out_on": "the ancient lore of the Vikings, the intricacies of Norse mythology, and the art of forging the finest Asgardian steel",\n  "age": 29,\n  "job": "God of Thunder and Protector of Asgard",\n  "funny_fact": "I once accidentally drank an entire horn of golden apples, thinking they were mead, and ended up singing a terrible rendition of a dwarven love song in front of the entire Asgardian court"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.037394261, 'prompt_tokens': 155, 'prompt_time': 0.020359826, 'completion_tokens': 254, 'completion_time': 0.923636364, 'total_tokens': 409, 'total_time': 0.94399619}, 'system_fingerprint': 'fp_4196e754db', 'x_groq': {'id': 'req_01jjwbgfs6ec0stvxz10z6hc24'}}
+2025-01-30 20:37:51,503 ERROR root: Failed to extract or parse JSON from response: list index out of range
+2025-01-30 20:39:52,204 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:39:52,204 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:39:52,208 INFO discord.client: logging in using static token
+2025-01-30 20:39:52,210 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:39:52,210 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:39:53,555 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f4c9ca3f59ab9b72ee303c3a53986682).
+2025-01-30 20:39:56,115 INFO root: ✅ Slash commands synced!
+2025-01-30 20:39:56,115 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:39:56,115 INFO root: ------
+2025-01-30 20:40:05,709 ERROR root: JSON decoding failed: Expecting value: line 1 column 1 (char 0) - Check the formatting of the JSON string.
+2025-01-30 20:40:05,947 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 457, in profile
+    await interaction.response.send_message("Failed to generate a valid profile. Please try again.")
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/interactions.py", line 855, in send_message
+    await adapter.create_interaction_response(
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-01-30 20:40:57,352 ERROR root: JSON decoding failed: Expecting value: line 1 column 1 (char 0) - Check the formatting of the JSON string.
+2025-01-30 20:42:00,243 INFO root: No existing profile cache found. Starting fresh.
+2025-01-30 20:42:00,244 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:42:00,248 INFO discord.client: logging in using static token
+2025-01-30 20:42:00,249 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:42:00,249 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:42:01,670 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 05100508ad63a6f0d9d97b2d6ff8f943).
+2025-01-30 20:42:04,008 INFO root: ✅ Slash commands synced!
+2025-01-30 20:42:04,013 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:42:04,014 INFO root: ------
+2025-01-30 20:42:06,604 INFO root: Profile response: {'id': 'chatcmpl-ea605130-9701-470e-b700-5f150b8515ea', 'object': 'chat.completion', 'created': 1738266125, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```json\n{\n    "name": "Ale",\n    "dating_me_like": "going on a thrilling adventure with your best friend",\n    "way_to_heart": "through good food, great music, and even better company",\n    "known_for": "my infectious laugh and ability to make anyone feel at ease",\n    "spontaneous_thing": "booking a last-minute ticket to a music festival in another city",\n    "geek_out_on": "science fiction novels and old video games",\n    "age": 28,\n    "job": "graphic designer",\n    "funny_fact": "I can recite the entire script of my favorite movie from memory, but I still can\'t remember where I put my keys"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.022582035, 'prompt_tokens': 150, 'prompt_time': 0.021906243, 'completion_tokens': 155, 'completion_time': 0.563636364, 'total_tokens': 305, 'total_time': 0.585542607}, 'system_fingerprint': 'fp_4e32347616', 'x_groq': {'id': 'req_01jjwbr9hjfrg9v9wqw388b09r'}}
+2025-01-30 20:42:06,604 INFO root: Profile cache saved.
+2025-01-30 20:42:35,791 INFO root: Profile response: {'id': 'chatcmpl-0c9133ea-038a-469e-8708-b628cbc559a8', 'object': 'chat.completion', 'created': 1738266154, 'model': 'llama-3.3-70b-versatile', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '```\n{\n  "name": "BERSERKER THOR",\n  "dating_me_like": "riding a rollercoaster while being attacked by giants, it\'s a wild and unforgettable experience",\n  "way_to_heart": "through battle and victory, or a well-crafted ale",\n  "known_for": "my fearless warriors\' spirit and unmatched strength in combat",\n  "spontaneous_thing": "leading a raid on a giant\'s fortress with nothing but my hammer and a fierce battle cry",\n  "geek_out_on": "the intricacies of Asgardian magic and the ancient lore of the Nine Realms",\n  "age": 29,\n  "job": "God of Thunder and Protector of Asgard",\n  "funny_fact": "I once accidentally drank an entire keg of golden apples, thinking it was ale, and ended up singing in front of the entire Asgardian court"\n}\n```'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 1.37645043, 'prompt_tokens': 155, 'prompt_time': 0.021767206, 'completion_tokens': 193, 'completion_time': 0.701818182, 'total_tokens': 348, 'total_time': 0.723585388}, 'system_fingerprint': 'fp_fcc3b74982', 'x_groq': {'id': 'req_01jjwbs4jdedvay2488n37rq3b'}}
+2025-01-30 20:42:35,791 ERROR root: Failed to extract or parse JSON from response: list index out of range
+2025-01-30 20:47:54,811 INFO root: Profile cache loaded.
+2025-01-30 20:49:21,916 INFO root: Profile cache loaded.
+2025-01-30 20:49:21,916 INFO root: No existing likes cache found. Starting fresh.
+2025-01-30 20:49:21,919 INFO discord.client: logging in using static token
+2025-01-30 20:49:21,921 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.38:8080
+2025-01-30 20:49:21,921 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 20:49:23,374 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 3c3a1644e7f4f39f9f4c1eaab810e170).
+2025-01-30 20:49:25,804 INFO root: ✅ Slash commands synced!
+2025-01-30 20:49:25,804 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 20:49:25,804 INFO root: ------
+2025-01-30 20:49:38,300 INFO root: Profile cache saved.
+2025-01-30 20:50:04,843 INFO root: Profile cache saved.
+2025-01-30 20:51:41,847 INFO root: Profile cache saved.
+2025-01-30 20:52:08,179 INFO root: Profile cache saved.
+2025-01-30 20:52:38,498 INFO root: Profile cache saved.
+2025-01-30 20:54:38,812 INFO root: Profile cache saved.
+2025-01-30 21:00:04,139 INFO root: Profile cache saved.
+2025-01-30 21:00:04,506 INFO root: Alticcio liked BERSERKER THOR's profile.
+2025-01-30 21:00:07,121 INFO root: Notified BERSERKER THOR of a new match with Alticcio.
+2025-01-30 21:00:07,121 INFO root: Notified Alticcio of a new match with BERSERKER THOR.
+2025-01-30 21:01:18,076 INFO root: Profile cache saved.
+2025-01-30 21:01:18,485 INFO root: BERSERKER THOR liked Alticcio's profile.
+2025-01-30 21:01:19,097 INFO root: Notified Alticcio of a new match with BERSERKER THOR.
+2025-01-30 21:01:19,097 INFO root: Notified BERSERKER THOR of a new match with Alticcio.
+2025-01-30 21:09:20,593 INFO root: Profile cache saved.
+2025-01-30 21:09:39,124 INFO root: Profile cache saved.
+2025-01-30 21:09:58,743 INFO root: Profile cache saved.
+2025-01-30 21:10:39,721 INFO root: Profile cache saved.
+2025-01-30 21:10:39,943 ERROR discord.app_commands.tree: Ignoring exception in command 'profile'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 494, in profile
+    await interaction.response.send_message(embed=embed)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/interactions.py", line 855, in send_message
+    await adapter.create_interaction_response(
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'profile' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-01-30 21:12:23,495 INFO root: Profile cache saved.
+2025-01-30 21:12:38,189 INFO root: Profile cache saved.
+2025-01-30 21:12:54,862 INFO root: Profile cache saved.
+2025-01-30 21:13:28,713 INFO root: Profile cache saved.
+2025-01-30 21:13:44,459 INFO root: Profile cache saved.
+2025-01-30 21:17:10,546 INFO root: Profile cache saved.
+2025-01-30 21:22:00,969 INFO root: Profile cache saved.
+2025-01-30 21:22:01,410 INFO root: Kira666 liked Alticcio's profile.
+2025-01-30 21:22:02,589 INFO root: Notified Alticcio of a new match with Kira666.
+2025-01-30 21:22:02,589 INFO root: Notified Kira666 of a new match with Alticcio.
+2025-01-30 21:23:36,968 INFO root: Profile cache saved.
+2025-01-30 21:23:37,482 INFO root: BERSERKER THOR liked Kira666's profile.
+2025-01-30 21:23:38,044 INFO root: Notified Kira666 of a new match with BERSERKER THOR.
+2025-01-30 21:23:38,044 INFO root: Notified BERSERKER THOR of a new match with Kira666.
+2025-01-30 21:23:54,731 INFO root: Profile cache saved.
+2025-01-30 21:23:55,235 INFO root: BERSERKER THOR liked King Ragnar's profile.
+2025-01-30 21:23:56,802 INFO root: Notified King Ragnar of a new match with BERSERKER THOR.
+2025-01-30 21:23:56,802 INFO root: Notified BERSERKER THOR of a new match with King Ragnar.
+2025-01-30 21:24:48,949 INFO root: Profile cache saved.
+2025-01-30 21:24:49,402 INFO root: Kira666 liked BERSERKER THOR's profile.
+2025-01-30 21:24:50,068 INFO root: Notified BERSERKER THOR of a new match with Kira666.
+2025-01-30 21:24:50,069 INFO root: Notified Kira666 of a new match with BERSERKER THOR.
+2025-01-30 21:25:24,014 INFO root: Profile cache saved.
+2025-01-30 21:25:24,525 INFO root: BERSERKER THOR liked ռօƈȶʊʀռǟ's profile.
+2025-01-30 21:25:26,111 INFO root: Notified ռօƈȶʊʀռǟ of a new match with BERSERKER THOR.
+2025-01-30 21:25:26,111 INFO root: Notified BERSERKER THOR of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:25:34,977 INFO root: Profile cache saved.
+2025-01-30 21:25:35,352 INFO root: BERSERKER THOR liked Mystie's profile.
+2025-01-30 21:25:36,609 INFO root: Notified Mystie of a new match with BERSERKER THOR.
+2025-01-30 21:25:36,610 INFO root: Notified BERSERKER THOR of a new match with Mystie.
+2025-01-30 21:26:45,651 INFO root: BERSERKER THOR attempted to like Alticcio's profile again.
+2025-01-30 21:26:56,995 INFO root: Profile cache saved.
+2025-01-30 21:26:57,606 INFO root: BERSERKER THOR liked Ratatoskr's profile.
+2025-01-30 21:26:58,782 INFO root: Notified Ratatoskr of a new match with BERSERKER THOR.
+2025-01-30 21:26:58,782 INFO root: Notified BERSERKER THOR of a new match with Ratatoskr.
+2025-01-30 21:28:33,457 INFO root: Profile cache saved.
+2025-01-30 21:28:33,826 INFO root: Kira666 liked ռօƈȶʊʀռǟ's profile.
+2025-01-30 21:28:34,483 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Kira666.
+2025-01-30 21:28:34,483 INFO root: Notified Kira666 of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:28:45,654 INFO root: Profile cache saved.
+2025-01-30 21:28:46,073 INFO root: ռօƈȶʊʀռǟ liked King Ragnar's profile.
+2025-01-30 21:28:46,893 INFO root: Notified King Ragnar of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:28:46,894 INFO root: Notified ռօƈȶʊʀռǟ of a new match with King Ragnar.
+2025-01-30 21:29:20,560 INFO root: Profile cache saved.
+2025-01-30 21:29:20,879 INFO root: ռօƈȶʊʀռǟ liked Kira666's profile.
+2025-01-30 21:29:21,805 INFO root: Notified Kira666 of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:29:21,805 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Kira666.
+2025-01-30 21:30:06,744 INFO root: Profile cache saved.
+2025-01-30 21:30:07,134 INFO root: ռօƈȶʊʀռǟ liked Mystie's profile.
+2025-01-30 21:30:07,639 INFO root: Notified Mystie of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:30:07,639 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Mystie.
+2025-01-30 21:32:02,094 INFO root: Profile cache saved.
+2025-01-30 21:32:02,487 INFO root: ռօƈȶʊʀռǟ liked Spinx's profile.
+2025-01-30 21:32:03,580 INFO root: Notified Spinx of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:32:03,581 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Spinx.
+2025-01-30 21:32:56,114 INFO root: Profile cache saved.
+2025-01-30 21:32:56,524 INFO root: Kira666 liked Spinx's profile.
+2025-01-30 21:32:57,241 INFO root: Notified Spinx of a new match with Kira666.
+2025-01-30 21:32:57,241 INFO root: Notified Kira666 of a new match with Spinx.
+2025-01-30 21:57:24,348 INFO root: Profile cache saved.
+2025-01-30 21:57:24,709 INFO root: BERSERKER THOR liked Atlas's profile.
+2025-01-30 21:57:26,393 INFO root: Notified Atlas of a new match with BERSERKER THOR.
+2025-01-30 21:57:26,394 INFO root: Notified BERSERKER THOR of a new match with Atlas.
+2025-01-30 21:58:03,567 INFO root: Profile cache saved.
+2025-01-30 21:58:04,179 INFO root: ռօƈȶʊʀռǟ liked Atlas's profile.
+2025-01-30 21:58:04,794 INFO root: Notified Atlas of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 21:58:04,795 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Atlas.
+2025-01-30 21:59:24,403 INFO root: Profile cache saved.
+2025-01-30 21:59:24,769 INFO root: Kira666 liked Atlas's profile.
+2025-01-30 21:59:25,792 INFO root: Notified Atlas of a new match with Kira666.
+2025-01-30 21:59:25,793 INFO root: Notified Kira666 of a new match with Atlas.
+2025-01-30 22:00:18,941 INFO root: Profile cache saved.
+2025-01-30 22:00:19,267 INFO root: Spinx liked Atlas's profile.
+2025-01-30 22:00:20,143 INFO root: Notified Atlas of a new match with Spinx.
+2025-01-30 22:00:20,143 INFO root: Notified Spinx of a new match with Atlas.
+2025-01-30 22:00:30,950 INFO root: Profile cache saved.
+2025-01-30 22:00:31,353 INFO root: Spinx liked ռօƈȶʊʀռǟ's profile.
+2025-01-30 22:00:32,569 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Spinx.
+2025-01-30 22:00:32,570 INFO root: Notified Spinx of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 22:00:48,632 INFO root: Profile cache saved.
+2025-01-30 22:00:49,014 INFO root: Spinx liked Kira666's profile.
+2025-01-30 22:00:49,665 INFO root: Notified Kira666 of a new match with Spinx.
+2025-01-30 22:00:49,665 INFO root: Notified Spinx of a new match with Kira666.
+2025-01-30 22:12:13,926 INFO root: Likes cache saved.
+2025-01-30 22:12:13,927 INFO root: Profile and likes cache saved on disconnect.
+2025-01-30 22:12:14,512 INFO discord.gateway: Shard ID None has successfully RESUMED session 3c3a1644e7f4f39f9f4c1eaab810e170.
+2025-01-30 23:25:50,874 INFO root: Profile cache loaded.
+2025-01-30 23:25:50,875 INFO root: Likes cache loaded.
+2025-01-30 23:25:50,878 INFO discord.client: logging in using static token
+2025-01-30 23:25:50,882 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-30 23:25:50,882 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 23:25:52,097 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 5ab49df2f80f127be92301166793f6a8).
+2025-01-30 23:25:54,717 INFO root: ✅ Slash commands synced!
+2025-01-30 23:25:54,718 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 23:25:54,718 INFO root: ------
+2025-01-30 23:33:19,154 INFO root: Profile cache loaded.
+2025-01-30 23:33:19,154 INFO root: Likes cache loaded.
+2025-01-30 23:37:36,471 INFO root: Profile cache loaded.
+2025-01-30 23:37:36,471 INFO root: Likes cache loaded.
+2025-01-30 23:37:36,475 INFO discord.client: logging in using static token
+2025-01-30 23:37:36,478 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-30 23:37:36,478 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 23:37:37,961 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6ab4cb6136d20f68d2211d2050d2fb70).
+2025-01-30 23:37:40,269 INFO root: ✅ Slash commands synced!
+2025-01-30 23:37:40,270 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 23:37:40,270 INFO root: ------
+2025-01-30 23:37:40,271 INFO apscheduler.scheduler: Scheduler started
+2025-01-30 23:37:40,271 INFO root: Scheduler started.
+2025-01-30 23:42:24,807 INFO root: Profile cache loaded.
+2025-01-30 23:42:24,807 INFO root: Likes cache loaded.
+2025-01-30 23:43:13,291 INFO root: Profile cache loaded.
+2025-01-30 23:43:13,291 INFO root: Likes cache loaded.
+2025-01-30 23:43:13,295 INFO discord.client: logging in using static token
+2025-01-30 23:43:13,297 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-30 23:43:13,297 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 23:43:14,546 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: d410a3a2b0ea9ddf3ded2da43ad66687).
+2025-01-30 23:43:17,107 INFO root: ✅ Slash commands synced!
+2025-01-30 23:43:17,108 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 23:43:17,108 INFO root: ------
+2025-01-30 23:43:17,109 INFO apscheduler.scheduler: Scheduler started
+2025-01-30 23:43:17,109 INFO root: Scheduler started.
+2025-01-30 23:48:29,303 INFO root: Profile cache loaded.
+2025-01-30 23:48:29,304 INFO root: Likes cache loaded.
+2025-01-30 23:48:29,308 INFO discord.client: logging in using static token
+2025-01-30 23:48:29,310 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-30 23:48:29,310 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 23:48:30,921 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 50dee6cb6c5179d4b3443175e0c1a16e).
+2025-01-30 23:48:33,324 INFO root: ✅ Slash commands synced!
+2025-01-30 23:48:33,324 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 23:48:33,325 INFO root: ------
+2025-01-30 23:48:33,326 INFO apscheduler.scheduler: Scheduler started
+2025-01-30 23:48:33,326 INFO root: Scheduler started.
+2025-01-30 23:51:58,334 INFO root: Profile cache loaded.
+2025-01-30 23:51:58,334 INFO root: Likes cache loaded.
+2025-01-30 23:51:58,339 INFO discord.client: logging in using static token
+2025-01-30 23:51:58,341 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-30 23:51:58,341 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-30 23:51:59,654 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 225661ffebe86551884436f73ec2880e).
+2025-01-30 23:52:02,234 INFO root: ✅ Slash commands synced!
+2025-01-30 23:52:02,234 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-30 23:52:02,234 INFO root: ------
+2025-01-30 23:52:02,235 INFO apscheduler.scheduler: Scheduler started
+2025-01-30 23:52:02,235 INFO root: Scheduler started.
+2025-01-30 23:56:17,446 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-30 23:56:54,371 INFO apscheduler.scheduler: Removed job 1299060798844567572_BEAR
+2025-01-30 23:58:20,798 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-30 23:58:47,855 INFO root: Profile cache saved.
+2025-01-30 23:58:48,227 INFO root: Mystie liked ռօƈȶʊʀռǟ's profile.
+2025-01-30 23:58:49,553 INFO root: Notified ռօƈȶʊʀռǟ of a new match with Mystie.
+2025-01-30 23:58:49,553 INFO root: Notified Mystie of a new match with ռօƈȶʊʀռǟ.
+2025-01-30 23:59:04,532 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:02:35,338 INFO root: Profile cache loaded.
+2025-01-31 00:02:35,338 INFO root: Likes cache loaded.
+2025-01-31 00:02:35,341 INFO discord.client: logging in using static token
+2025-01-31 00:02:35,344 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:02:35,344 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:02:36,281 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 7f971ed7a1d10492792767633c95a015).
+2025-01-31 00:02:38,677 INFO root: ✅ Slash commands synced!
+2025-01-31 00:02:38,678 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:02:38,678 INFO root: ------
+2025-01-31 00:02:38,679 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:02:38,680 INFO root: Scheduler started.
+2025-01-31 00:05:34,374 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:05:52,402 INFO root: Profile cache saved.
+2025-01-31 00:05:52,866 INFO root: THE POPE liked King Ragnar's profile.
+2025-01-31 00:05:53,847 INFO root: Notified King Ragnar of a new match with THE POPE.
+2025-01-31 00:05:53,847 INFO root: Notified THE POPE of a new match with King Ragnar.
+2025-01-31 00:06:09,820 INFO root: Profile cache saved.
+2025-01-31 00:06:10,261 INFO root: Kira666 liked THE POPE's profile.
+2025-01-31 00:06:11,168 INFO root: Notified THE POPE of a new match with Kira666.
+2025-01-31 00:06:11,168 INFO root: Notified Kira666 of a new match with THE POPE.
+2025-01-31 00:06:18,433 INFO root: THE POPE attempted to unlike King Ragnar's profile without a prior like.
+2025-01-31 00:06:34,292 INFO root: Profile cache saved.
+2025-01-31 00:06:34,659 INFO root: THE POPE liked Kira666's profile.
+2025-01-31 00:06:35,598 INFO root: Notified Kira666 of a new match with THE POPE.
+2025-01-31 00:06:35,598 INFO root: Notified THE POPE of a new match with Kira666.
+2025-01-31 00:06:49,098 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:07:00,012 INFO apscheduler.executors.default: Running job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='7'], next run at: 2025-02-07 00:07:00 CET)" (scheduled at 2025-01-31 00:07:00+01:00)
+2025-01-31 00:07:00,304 INFO apscheduler.executors.default: Job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='7'], next run at: 2025-02-07 00:07:00 CET)" executed successfully
+2025-01-31 00:07:33,300 INFO apscheduler.scheduler: Removed job 698560345194758223_Test
+2025-01-31 00:08:24,600 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:09:00,056 INFO apscheduler.executors.default: Running job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='9'], next run at: 2025-02-07 00:09:00 CET)" (scheduled at 2025-01-31 00:09:00+01:00)
+2025-01-31 00:09:00,735 INFO apscheduler.executors.default: Job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='9'], next run at: 2025-02-07 00:09:00 CET)" executed successfully
+2025-01-31 00:09:14,542 INFO apscheduler.scheduler: Removed job 1299060798844567572_Test
+2025-01-31 00:11:01,560 INFO root: Profile cache saved.
+2025-01-31 00:11:02,367 INFO root: BERSERKER THOR liked THE POPE's profile.
+2025-01-31 00:11:03,121 INFO root: Notified THE POPE of a new match with BERSERKER THOR.
+2025-01-31 00:11:03,121 INFO root: Notified BERSERKER THOR of a new match with THE POPE.
+2025-01-31 00:13:37,088 INFO root: Profile cache loaded.
+2025-01-31 00:13:37,089 INFO root: Likes cache loaded.
+2025-01-31 00:18:30,205 INFO root: Profile cache loaded.
+2025-01-31 00:18:30,205 INFO root: Likes cache loaded.
+2025-01-31 00:19:13,454 INFO root: Profile cache loaded.
+2025-01-31 00:19:13,454 INFO root: Likes cache loaded.
+2025-01-31 00:19:13,458 INFO discord.client: logging in using static token
+2025-01-31 00:19:13,460 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:19:13,460 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:19:14,592 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: a5d2cd626088f28210353515b0385bef).
+2025-01-31 00:19:17,388 INFO root: ✅ Slash commands synced!
+2025-01-31 00:19:17,389 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:19:17,389 INFO root: ------
+2025-01-31 00:19:17,390 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:19:17,390 INFO root: Scheduler started.
+2025-01-31 00:19:23,124 INFO root: Profile cache saved.
+2025-01-31 00:19:23,794 INFO root: THE POPE liked #KRATOS#'s profile.
+2025-01-31 00:19:25,100 INFO root: Notified #KRATOS# of a new match with THE POPE.
+2025-01-31 00:19:25,100 INFO root: Notified THE POPE of a new match with #KRATOS#.
+2025-01-31 00:20:15,508 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:20:30,300 INFO apscheduler.scheduler: Removed job 1299060798844567572_test timezone
+2025-01-31 00:20:54,325 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:21:37,616 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 00:21:57,928 INFO apscheduler.scheduler: Removed job 1299060798844567572_test
+2025-01-31 00:22:00,006 INFO apscheduler.executors.default: Running job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='22'], next run at: 2025-02-07 00:22:00 CET)" (scheduled at 2025-01-31 00:22:00+01:00)
+2025-01-31 00:22:00,570 INFO apscheduler.executors.default: Job "notify_event (trigger: cron[day_of_week='fri', hour='0', minute='22'], next run at: 2025-02-07 00:22:00 CET)" executed successfully
+2025-01-31 00:22:29,560 INFO apscheduler.scheduler: Removed job 1299060798844567572_test 2
+2025-01-31 00:39:34,912 INFO root: Profile cache loaded.
+2025-01-31 00:39:34,913 INFO root: Likes cache loaded.
+2025-01-31 00:39:34,916 INFO discord.client: logging in using static token
+2025-01-31 00:39:34,918 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:39:34,918 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:39:35,946 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 7abe609a3f21e1c6391368df53092103).
+2025-01-31 00:39:38,377 INFO root: ✅ Slash commands synced!
+2025-01-31 00:39:38,377 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:39:38,463 INFO root: ------
+2025-01-31 00:39:38,465 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:39:38,465 INFO root: Scheduler started.
+2025-01-31 00:45:07,720 ERROR discord.app_commands.tree: Ignoring exception in command 'like'
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/ale/Desktop/Progetti/Discord-bot/Whiteout-Survival.py", line 645, in like_command
+    logging.info(f"{interaction.user.display_name} attempted to like {member.display_name}'s profile again.")
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/interactions.py", line 855, in send_message
+    await adapter.create_interaction_response(
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'like' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-01-31 00:51:11,451 INFO root: Profile cache loaded.
+2025-01-31 00:51:11,452 INFO root: Likes cache loaded.
+2025-01-31 00:51:11,456 INFO discord.client: logging in using static token
+2025-01-31 00:51:11,459 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:51:11,459 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:51:12,538 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: fa64f4ea0131cff16bc6feb1341be931).
+2025-01-31 00:51:14,951 INFO root: ✅ Slash commands synced!
+2025-01-31 00:51:14,951 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:51:14,951 INFO root: ------
+2025-01-31 00:51:14,952 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:51:14,953 INFO root: Scheduler started.
+2025-01-31 00:53:18,562 INFO root: Alticcio attempted to like BERSERKER THOR's profile again.
+2025-01-31 00:54:59,137 INFO root: Profile cache loaded.
+2025-01-31 00:54:59,137 INFO root: Likes cache loaded.
+2025-01-31 00:54:59,141 INFO discord.client: logging in using static token
+2025-01-31 00:54:59,144 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:54:59,144 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:55:00,450 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 261111b538a8b25f15c67265d6f935ea).
+2025-01-31 00:55:03,024 INFO root: ✅ Slash commands synced!
+2025-01-31 00:55:03,024 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:55:03,024 INFO root: ------
+2025-01-31 00:55:03,025 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:55:03,026 INFO root: Scheduler started.
+2025-01-31 00:56:49,425 INFO root: Profile cache loaded.
+2025-01-31 00:56:49,426 INFO root: Likes cache loaded.
+2025-01-31 00:56:49,430 INFO discord.client: logging in using static token
+2025-01-31 00:56:49,432 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:56:49,432 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:56:50,496 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f90c1a21ab79959354b3885ca7930548).
+2025-01-31 00:56:52,933 INFO root: ✅ Slash commands synced!
+2025-01-31 00:56:52,934 INFO root: <coroutine object CommandTree.fetch_commands at 0x73b6a03a0350>
+2025-01-31 00:56:52,997 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:56:52,997 INFO root: ------
+2025-01-31 00:56:52,999 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:56:52,999 INFO root: Scheduler started.
+2025-01-31 00:57:05,366 INFO root: Profile cache loaded.
+2025-01-31 00:57:05,366 INFO root: Likes cache loaded.
+2025-01-31 00:57:05,371 INFO discord.client: logging in using static token
+2025-01-31 00:57:05,373 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:57:05,374 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:57:06,387 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 83d8768ce669439db555906cc4cbbf4f).
+2025-01-31 00:57:52,939 INFO root: ✅ Slash commands synced!
+2025-01-31 00:57:52,940 INFO root: <coroutine object CommandTree.fetch_commands at 0x7830de7cc510>
+2025-01-31 00:57:52,944 ERROR root: ❌ Error syncing commands: object NoneType can't be used in 'await' expression
+2025-01-31 00:57:52,944 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:57:52,944 INFO root: ------
+2025-01-31 00:57:52,946 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:57:52,946 INFO root: Scheduler started.
+2025-01-31 00:58:39,196 INFO root: Profile cache loaded.
+2025-01-31 00:58:39,196 INFO root: Likes cache loaded.
+2025-01-31 00:58:39,200 INFO discord.client: logging in using static token
+2025-01-31 00:58:39,204 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:58:39,204 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 00:58:40,332 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 99fc6acce3f597ab42dc06e15e259e09).
+2025-01-31 00:58:42,625 INFO root: ✅ Slash commands synced!
+2025-01-31 00:58:42,625 INFO root: [<discord.app_commands.commands.Command object at 0x71e814409c60>, <discord.app_commands.commands.Command object at 0x71e814409ff0>, <discord.app_commands.commands.Command object at 0x71e81440a3b0>, <discord.app_commands.commands.Command object at 0x71e81440a4a0>, <discord.app_commands.commands.Command object at 0x71e81440a770>, <discord.app_commands.commands.Command object at 0x71e81440a890>, <discord.app_commands.commands.Command object at 0x71e81440a9b0>, <discord.app_commands.commands.Command object at 0x71e81440aad0>, <discord.app_commands.commands.Command object at 0x71e81440ab60>, <discord.app_commands.commands.Command object at 0x71e81440abf0>, <discord.app_commands.commands.Command object at 0x71e81440ac80>, <discord.app_commands.commands.Command object at 0x71e81440ad10>]
+2025-01-31 00:58:42,625 ERROR root: ❌ Error syncing commands: object NoneType can't be used in 'await' expression
+2025-01-31 00:58:42,626 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 00:58:42,626 INFO root: ------
+2025-01-31 00:58:42,627 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 00:58:42,627 INFO root: Scheduler started.
+2025-01-31 00:59:59,668 INFO root: Profile cache loaded.
+2025-01-31 00:59:59,668 INFO root: Likes cache loaded.
+2025-01-31 00:59:59,673 INFO discord.client: logging in using static token
+2025-01-31 00:59:59,675 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 00:59:59,675 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 01:00:01,025 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 8fde762fd2171cb95eaccf0fdd9a2cac).
+2025-01-31 01:00:03,554 INFO root: ✅ Slash commands synced!
+2025-01-31 01:00:03,554 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 01:00:03,555 INFO root: ------
+2025-01-31 01:00:03,556 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 01:00:03,556 INFO root: Scheduler started.
+2025-01-31 01:01:01,726 INFO root: Likes cache saved.
+2025-01-31 01:01:01,729 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:01,731 ERROR discord.client: Attempting a reconnect in 0.37s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:01,828 INFO root: Likes cache saved.
+2025-01-31 01:01:01,828 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:02,201 ERROR discord.client: Attempting a reconnect in 2.09s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:02,204 INFO root: Likes cache saved.
+2025-01-31 01:01:02,206 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:04,300 ERROR discord.client: Attempting a reconnect in 3.89s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:04,301 INFO root: Likes cache saved.
+2025-01-31 01:01:04,302 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:08,221 ERROR discord.client: Attempting a reconnect in 6.52s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:08,224 INFO root: Likes cache saved.
+2025-01-31 01:01:08,225 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:14,780 ERROR discord.client: Attempting a reconnect in 21.29s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:14,783 INFO root: Likes cache saved.
+2025-01-31 01:01:14,785 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:01:36,112 ERROR discord.client: Attempting a reconnect in 51.84s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:01:36,115 INFO root: Likes cache saved.
+2025-01-31 01:01:36,116 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:02:28,014 ERROR discord.client: Attempting a reconnect in 111.80s
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1351, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/client.py", line 664, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/gateway.py", line 374, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/ale/.local/lib/python3.10/site-packages/discord/http.py", line 550, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/ale/.local/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+2025-01-31 01:02:28,016 INFO root: Likes cache saved.
+2025-01-31 01:02:28,018 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:04:20,226 INFO discord.gateway: Shard ID None session has been invalidated.
+2025-01-31 01:04:20,353 INFO root: Likes cache saved.
+2025-01-31 01:04:20,354 INFO root: Profile and likes cache saved on disconnect.
+2025-01-31 01:04:25,762 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: f0a69ca6bd65672496f1505c30a56be6).
+2025-01-31 01:04:28,214 INFO root: ✅ Slash commands synced!
+2025-01-31 01:04:28,214 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 01:04:28,214 INFO root: ------
+2025-01-31 01:05:42,587 INFO root: Profile cache loaded.
+2025-01-31 01:05:42,587 INFO root: Likes cache loaded.
+2025-01-31 01:05:42,591 INFO discord.client: logging in using static token
+2025-01-31 01:05:42,594 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 01:05:42,594 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 01:05:43,584 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 20a2b0c37ad7443fac9ee7c59e9b7610).
+2025-01-31 01:05:46,155 INFO root: ✅ Slash commands synced!
+2025-01-31 01:05:46,155 INFO root: Commands: ['profile', 'resetprofile', 'listprofiles', 'schedule_event', 'remove_event', 'like', 'unlike', 'likes', 'mymatches', 'findmatches', 'help', 'toplikes']
+2025-01-31 01:05:46,155 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 01:05:46,156 INFO root: ------
+2025-01-31 01:05:46,157 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 01:05:46,157 INFO root: Scheduler started.
+2025-01-31 01:17:12,354 INFO root: Profile cache loaded.
+2025-01-31 01:17:12,354 INFO root: Likes cache loaded.
+2025-01-31 01:17:12,358 INFO discord.client: logging in using static token
+2025-01-31 01:17:12,361 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.178.38:7123
+2025-01-31 01:17:12,361 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-01-31 01:17:13,362 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: c77e1d7cb69d9b966b34d6ff58b27137).
+2025-01-31 01:17:15,736 INFO root: ✅ Slash commands synced!
+2025-01-31 01:17:15,736 INFO root: Commands: ['profile', 'resetprofile', 'listprofiles', 'schedule_event', 'remove_event', 'like', 'unlike', 'likes', 'mymatches', 'findmatches', 'help', 'toplikes']
+2025-01-31 01:17:15,736 INFO root: Logged in as Hinge#0051 (ID: 1334249980659236974)
+2025-01-31 01:17:15,736 INFO root: ------
+2025-01-31 01:17:15,737 INFO apscheduler.scheduler: Scheduler started
+2025-01-31 01:17:15,737 INFO root: Scheduler started.
+2025-01-31 01:23:09,085 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 01:23:26,324 INFO apscheduler.scheduler: Removed job 698560345194758223_test
+2025-01-31 01:23:44,660 INFO apscheduler.scheduler: Added job "notify_event" to job store "default"
+2025-01-31 01:23:52,487 INFO apscheduler.scheduler: Removed job 1299060798844567572_test
+2025-02-05 01:01:55,908 INFO root: Profile cache loaded.
+2025-02-05 01:01:55,909 INFO root: Likes cache loaded.
+2025-02-05 01:01:55,917 INFO discord.client: logging in using static token
+2025-02-05 01:01:55,920 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7123
+ * Running on http://192.168.213.186:7123
+2025-02-05 01:01:55,920 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-02-05 01:01:58,137 INFO discord.gateway: Shard ID None has connected to Gateway (Session ID: 6b08ad043b1e439a2cda53d2cce34702).
+2025-02-05 01:02:01,379 INFO root: ✅ Slash commands synced!
+2025-02-05 01:02:01,379 INFO root: Commands: ['profile', 'resetprofile', 'listprofiles', 'schedule_event', 'remove_event', 'like', 'unlike', 'likes', 'mymatches', 'findmatches', 'help', 'sendmessage', 'toplikes']
+2025-02-05 01:02:01,379 INFO root: Logged in as Evil Potato BOT#0051 (ID: 1334249980659236974)
+2025-02-05 01:02:01,380 INFO root: ------
+2025-02-05 01:02:01,435 INFO apscheduler.scheduler: Scheduler started
+2025-02-05 01:02:01,435 INFO root: Scheduler started.
