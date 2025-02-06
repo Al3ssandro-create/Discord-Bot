@@ -36,8 +36,8 @@ This is a **Discord bot** designed for **matchmaking, event scheduling, and auto
 ### 2️⃣ Running the Bot
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo/discord-bot.git
-   cd discord-bot
+   git clone https://github.com/Al3ssandro-create/Discord-Bot.git
+   cd Discord-Bot
    ```
 2. Create an `.env` file and add your **Discord bot token** and **Groq API key**.
 3. Install dependencies:
@@ -46,7 +46,7 @@ This is a **Discord bot** designed for **matchmaking, event scheduling, and auto
    ```
 4. Run the bot:
    ```sh
-   python bot.py
+   python Whiteout-Survival.py
    ```
 
 ---
