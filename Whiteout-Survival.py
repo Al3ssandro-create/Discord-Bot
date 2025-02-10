@@ -15,6 +15,7 @@ import requests
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
 from datetime import datetime, timedelta
+import hashlib
 # ---------------------------
 # Logging Configuration
 # ---------------------------
@@ -34,6 +35,9 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+GIFT_CODE_URL = "https://wos-giftcode-api.centurygame.com/api/gift_code"  
+PLAYER_INFO_URL = "https://wos-giftcode-api.centurygame.com/api/player"
+SECRET_KEY = os.getenv('SECRET_KEY')
 # ---------------------------
 # Required Profile Keys
 # ---------------------------
@@ -49,6 +53,21 @@ required_profile_keys = [
     "funny_fact"
 ]
 
+
+
+# Load or initialize the ID map
+ID_MAP_FILE = "id_map.json"
+
+try:
+    with open(ID_MAP_FILE, "r") as f:
+        user_id_map = json.load(f)
+except FileNotFoundError:
+    user_id_map = {}  # { "discord_id": game_id }
+
+# Function to save ID map
+def save_id_map():
+    with open(ID_MAP_FILE, "w") as f:
+        json.dump(user_id_map, f, indent=4)
 # ---------------------------
 # Initialize and Validate Profile Cache
 # ---------------------------
@@ -147,33 +166,154 @@ async def can_generate_profile(user_id):
 scheduler = AsyncIOScheduler()
 
 # -----------------------------------
+# Function to fetch game profile
+# -----------------------------------
+def fetch_game_profile(game_id):
+    secret = SECRET_KEY
+    timestamp = str(int(time.time() * 1000))
+
+    form = f"fid={game_id}&time={timestamp}"
+    sign = hashlib.md5((form + secret).encode()).hexdigest()
+    form = f"sign={sign}&" + form
+
+    url = "https://wos-giftcode-api.centurygame.com/api/player"
+    headers = {"Content-Type": "application/x-www-form-urlencoded"}
+    response = requests.post(url, headers=headers, data=form)
+
+    try:
+        return response.json()
+    except requests.exceptions.JSONDecodeError:
+        return None
+  
+def generate_signature(data):
+    """Generates MD5 hash signature for API authentication."""
+    sorted_keys = sorted(data.keys())
+    encoded_data = "&".join(
+        [f"{key}={json.dumps(data[key]) if isinstance(data[key], dict) else data[key]}" for key in sorted_keys]
+    )
+    return hashlib.md5(f"{encoded_data}{SECRET_KEY}".encode()).hexdigest()
+
+def test_player_info(player_id):
+    """Fetches player info from the API."""
+    data = {
+        "fid": player_id,
+        "time": str(int(time.time()))
+    }
+    data["sign"] = generate_signature(data)
+
+    response = requests.post(PLAYER_INFO_URL, headers={"Content-Type": "application/x-www-form-urlencoded"}, data=data)
+    
+    try:
+        result = response.json()
+    except json.JSONDecodeError:
+        logging.error("Failed to decode JSON response.")
+
+def redeem_gift_code(gift_code, player_id):
+    """Fetches available gift codes for the player."""
+    print("\n🔹 Testing Gift Code API...")
+    data = {
+        "fid": player_id,
+        "time": str(int(time.time())),
+        "cdk": gift_code
+    }
+    data["sign"] = generate_signature(data)
+
+    response = requests.post(GIFT_CODE_URL, headers={"Content-Type": "application/x-www-form-urlencoded"}, data=data)
+    
+    try:
+        result = response.json()
+
+        logging.info(f"Response: {result}")
+    except json.JSONDecodeError:
+        logging.error("Failed to decode JSON response.")
+    if result.get("msg") == "SUCCESS":
+        return "SUCCESS"
+    elif result.get("msg") == "RECEIVED." and result.get("err_code") == 40008:
+        return "ALREADY_RECEIVED"
+    elif result.get("msg") == "CDK NOT FOUND." and result.get("err_code") == 40014:
+        return "CDK_NOT_FOUND"
+    elif result.get("msg") == "SAME TYPE EXCHANGE." and result.get("err_code") == 40011:
+        return "ALREADY_RECEIVED"
+    else:
+        return "ERROR"
+# -----------------------------------
+# Restore scheduled events from cache
+# -----------------------------------
+# -----------------------------------
 # Restore scheduled events from cache
 # -----------------------------------
 def restore_events():
     events = load_events()
+    restored_count = 0  # Track how many events are restored
+
     for event_id, data in events.items():
         mode = data["mode"]
         channel_id = data["channel_id"]
         message = data["message"]
 
         if mode == "weekly":
-            trigger = CronTrigger(day_of_week=data["day_of_week"], hour=data["hour"], minute=data["minute"])
+            try:
+                # Ensure correct data format
+                day_of_week = data["day_of_week"]
+                hour = int(data["hour"])
+                minute = int(data["minute"])
+
+                trigger = CronTrigger(day_of_week=day_of_week, hour=hour, minute=minute)
+
+                scheduler.add_job(
+                    notify_event,
+                    trigger,
+                    args=[channel_id, message],
+                    id=event_id,
+                    replace_existing=True
+                )
+                restored_count += 1
+                logging.info(f"✅ Restored weekly event '{event_id}' for {day_of_week} at {hour}:{minute}.")
+            
+            except KeyError as e:
+                logging.error(f"❌ Skipping weekly event {event_id}: Missing key {e}")
+            except ValueError as e:
+                logging.error(f"❌ Skipping weekly event {event_id}: Invalid data format - {e}")
+
         elif mode == "interval":
-            last_start = datetime.fromisoformat(data["start_time"])  # Restore the original start time
-            now = datetime.utcnow()
+            try:
+                # Combine start_date and start_time into a full datetime string
+                start_datetime_str = f"{data['start_date']} {data['start_time']}"
+                last_start = datetime.strptime(start_datetime_str, "%Y-%m-%d %H:%M")  # Convert to datetime
+                now = datetime.utcnow()
 
-            # Adjust the interval so it's aligned with the original start time
-            time_passed = (now - last_start).total_seconds()
-            interval_seconds = data["interval_value"] * 3600 if data["interval_unit"] == "hours" else data["interval_value"] * 86400
-            next_run_seconds = interval_seconds - (time_passed % interval_seconds)
+                # Calculate the correct time until the next execution
+                time_passed = (now - last_start).total_seconds()
+                interval_seconds = (
+                    data["interval_value"] * 60 if data["interval_unit"] == "minutes"
+                    else data["interval_value"] * 3600 if data["interval_unit"] == "hours"
+                    else data["interval_value"] * 86400
+                )
 
-            trigger = IntervalTrigger(seconds=interval_seconds, start_date=now + timedelta(seconds=next_run_seconds))
-        
-        else:
-            continue  # Skip unknown mode
-        
-        scheduler.add_job(notify_event, trigger, args=[channel_id, message], id=event_id, replace_existing=True)
-    print(f"Restored {len(events)} scheduled events.")
+                # Align the next run correctly
+                next_run_seconds = interval_seconds - (time_passed % interval_seconds)
+                next_run_time = now + timedelta(seconds=next_run_seconds)
+
+                trigger = IntervalTrigger(seconds=interval_seconds, start_date=next_run_time)
+
+                scheduler.add_job(
+                    notify_event,
+                    trigger,
+                    args=[channel_id, message],
+                    id=event_id,
+                    replace_existing=True
+                )
+                restored_count += 1
+                logging.info(f"✅ Restored interval event '{event_id}' to start at {next_run_time} every {data['interval_value']} {data['interval_unit']}.")
+
+            except KeyError as e:
+                logging.error(f"❌ Skipping interval event {event_id}: Missing key {e}")
+            except ValueError as e:
+                logging.error(f"❌ Skipping interval event {event_id}: Invalid date/time format - {e}")
+
+    logging.info(f"🔄 Restored {restored_count} scheduled events.")
+
+
 
 # ---------------------------
 # Likes Management Functions
@@ -326,6 +466,38 @@ def save_cache():
     with open(CACHE_FILE, "w") as f:
         json.dump(profile_cache, f, indent=4)
     logging.info("Profile cache saved.")
+# ---------------------------
+# Slash Command for gift code
+# ---------------------------
+@tree.command(name="gift_code", description="Redeem a gift code")
+async def gift_code(interaction: discord.Interaction, gift_code: str):
+    player_ids = user_id_map.values()
+    
+    if not player_ids:
+        await interaction.response.send_message("No players have been mapped yet.", ephemeral=True)
+        return
+
+    # 🔹 Acknowledge the interaction before processing (Prevents "Unknown Interaction" error)
+    await interaction.response.defer(thinking=True)  
+
+    response_messages = []
+    
+    for player_id in player_ids:
+        test_player_info(player_id)  # Fetch player info (Not strictly necessary)
+        result = redeem_gift_code(gift_code, player_id)
+
+        if result == "SUCCESS":
+            response_messages.append(f"✅ `{player_id}`: **Gift code redeemed!**")
+        elif result == "ALREADY_RECEIVED":
+            response_messages.append(f"`{player_id}`: **Already redeemed.**")
+        elif result == "CDK_NOT_FOUND":
+            response_messages.append(f"❌ `{player_id}`: **Gift code not found.**")
+        elif result == "ERROR":
+            response_messages.append(f"❌ `{player_id}`: **Error redeeming gift code.**")
+
+    # 🔹 Send final response after processing all users
+    logging.info("\n".join(response_messages))
+    await interaction.followup.send(f"All players have received the gift code `{gift_code}`", ephemeral=True)
 
 # ---------------------------
 # Slash Commands to Generate Profile
@@ -450,7 +622,7 @@ async def list_scheduled_events(interaction: discord.Interaction):
 
 
 # ---------------------------
-# Slash Command to Schedule a Weekly Event
+# Slash Command to Schedule a Weekly or Interval Event
 # ---------------------------
 @tree.command(name="schedule_event", description="Schedule a recurring event with a unique name and custom notification message")
 @discord.app_commands.describe(
@@ -460,7 +632,8 @@ async def list_scheduled_events(interaction: discord.Interaction):
     time="(For 'weekly' mode) Time of the event (HH:MM format, 24-hour)",
     interval_value="(For 'interval' mode) Number of units between notifications",
     interval_unit="(For 'interval' mode) Unit: minutes, hours, or days",
-    start_time="(For 'interval' mode) Time when the first occurrence should start (HH:MM 24-hour format)",
+    start_date="(For 'interval' mode) Starting date (YYYY-MM-DD format)",
+    start_time="(For 'interval' mode) Starting time (HH:MM format, 24-hour)",
     message="Custom message to send when notifying"
 )
 async def schedule_event(
@@ -471,6 +644,7 @@ async def schedule_event(
     time: str = None,
     interval_value: int = None,
     interval_unit: str = None,
+    start_date: str = None,
     start_time: str = None,
     message: str = None
 ):
@@ -499,35 +673,37 @@ async def schedule_event(
             await interaction.response.send_message(f"Scheduled event '{event_name}' for every {day_of_week} at {time}.")
 
         elif mode.lower() == "interval":
-            if not interval_value or not interval_unit or not start_time:
-                await interaction.response.send_message("For interval scheduling, provide `interval_value`, `interval_unit`, and `start_time` (HH:MM).", ephemeral=True)
+            if not interval_value or not interval_unit or not start_date or not start_time:
+                await interaction.response.send_message("For interval scheduling, provide `interval_value`, `interval_unit`, `start_date` (YYYY-MM-DD), and `start_time` (HH:MM).", ephemeral=True)
                 return
 
-            hour, minute = map(int, start_time.split(":"))
+            # Parse start date and time
+            start_datetime = datetime.strptime(f"{start_date} {start_time}", "%Y-%m-%d %H:%M")
             now = datetime.utcnow()
-            first_run = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
 
-            if first_run < now:
-                first_run += timedelta(days=1)
+            if start_datetime < now:
+                await interaction.response.send_message("The start date and time must be in the future.", ephemeral=True)
+                return
 
             unit_mapping = {"minutes": "minutes", "hours": "hours", "days": "days"}
             if interval_unit.lower() not in unit_mapping:
                 await interaction.response.send_message("Invalid `interval_unit`. Choose 'minutes', 'hours', or 'days'.", ephemeral=True)
                 return
 
-            trigger = IntervalTrigger(**{unit_mapping[interval_unit.lower()]: interval_value}, start_date=first_run)
+            trigger = IntervalTrigger(**{unit_mapping[interval_unit.lower()]: interval_value}, start_date=start_datetime)
 
             events[event_id] = {
                 "mode": "interval",
                 "channel_id": interaction.channel_id,
                 "interval_value": interval_value,
                 "interval_unit": interval_unit.lower(),
-                "start_time": first_run.isoformat(),
+                "start_date": start_datetime.strftime("%Y-%m-%d"),
+                "start_time": start_datetime.strftime("%H:%M"),
                 "message": message
             }
 
             scheduler.add_job(notify_event, trigger, args=[interaction.channel_id, message], id=event_id, replace_existing=True)
-            await interaction.response.send_message(f"Scheduled event '{event_name}' to repeat every {interval_value} {interval_unit} starting at {start_time}.")
+            await interaction.response.send_message(f"Scheduled event '{event_name}' to repeat every {interval_value} {interval_unit} starting on {start_date} at {start_time}.")
 
         else:
             await interaction.response.send_message("Invalid mode. Choose 'weekly' or 'interval'.", ephemeral=True)
@@ -541,21 +717,128 @@ async def schedule_event(
 # ---------------------------
 # Slash Command to Remove a Scheduled Event
 # ---------------------------
-@tree.command(name="remove_event", description="Remove a scheduled weekly event by name")
+@tree.command(name="remove_event", description="Remove a scheduled event by name")
 @discord.app_commands.describe(event_name="Name of the event")
 async def remove_event(interaction: discord.Interaction, event_name: str):
-    event_id = f"{interaction.guild_id}_{event_name}"   
-    if scheduler.get_job(event_id):
-        scheduler.remove_job(event_id)
-        await interaction.response.send_message(f"Event '{event_name}' has been removed.")
+    event_id = f"{interaction.guild_id}_{event_name}"
+    events = load_events()
+
+    if event_id in events:
+        # Remove the event from the scheduler
+        if scheduler.get_job(event_id):
+            scheduler.remove_job(event_id)
+
+        # Remove the event from the cache
+        del events[event_id]
+        save_events(events)
+        await interaction.response.send_message(f"Event '{event_name}' has been removed from the schedule and cache.")
     else:
         await interaction.response.send_message(f"No event found with name '{event_name}'.")
 
+# ---------------------------
+# Slash Command to Check Next Occurrence of an Event
+# ---------------------------
+@tree.command(name="next_event", description="Check the next occurrence of a scheduled event by name")
+@discord.app_commands.describe(event_name="Name of the event")
+async def next_event(interaction: discord.Interaction, event_name: str):
+    event_id = f"{interaction.guild_id}_{event_name}"
+    job = scheduler.get_job(event_id)
+
+    if job:
+        next_run_time = job.next_run_time
+        if next_run_time:
+            await interaction.response.send_message(f"The next occurrence of event '{event_name}' is scheduled for {next_run_time}.")
+        else:
+            await interaction.response.send_message(f"The event '{event_name}' does not have a next run time.")
+    else:
+        await interaction.response.send_message(f"No event found with name '{event_name}'.")
+
+# ---------------------------
+# Notify Event
+# ---------------------------
 async def notify_event(channel_id, message):
     channel = bot.get_channel(channel_id)
     if channel:
         await channel.send(message)
 
+# ---------------------------
+# Slash Command to Add a Mapping
+# ---------------------------
+@tree.command(name="add_game_id", description="Map a Discord user to their in-game ID")
+async def add_game_id(interaction: discord.Interaction, member: discord.Member, game_id: int):
+    user_id_map[str(member.id)] = game_id
+    save_id_map()
+    await interaction.response.send_message(f"✅ Added **{member.display_name}** with game ID **{game_id}**!", ephemeral=True)
+# -----------------------------------
+# 📌 Slash Command to Remove a Mapping
+# -----------------------------------
+@tree.command(name="remove_game_id", description="Remove a user's in-game ID mapping")
+async def remove_game_id(interaction: discord.Interaction, member: discord.Member):
+    if str(member.id) in user_id_map:
+        del user_id_map[str(member.id)]
+        save_id_map()
+        await interaction.response.send_message(f"🗑 Removed **{member.display_name}** from the ID map.", ephemeral=True)
+    else:
+        await interaction.response.send_message(f"⚠ **{member.display_name}** is not mapped to any game ID.", ephemeral=True)
+
+# -----------------------------------
+# 📌 Slash Command to List All Mappings
+# -----------------------------------
+@tree.command(name="list_game_ids", description="View all mapped Discord users and their game IDs")
+async def list_game_ids(interaction: discord.Interaction):
+    if not user_id_map:
+        await interaction.response.send_message("ℹ No players have been mapped yet.", ephemeral=True)
+        return
+    
+    message = "**🎮 Player ID Mappings:**\n"
+    for discord_id, game_id in user_id_map.items():
+        member = interaction.guild.get_member(int(discord_id))
+        member_name = member.display_name if member else f"Unknown ({discord_id})"
+        message += f"🔹 **{member_name}** → `{game_id}`\n"
+
+    await interaction.response.send_message(message, ephemeral=True)
+
+# -----------------------------------
+# 📌 Slash Command to Fetch Player Profile
+# -----------------------------------
+@tree.command(name="profile_mapped", description="Fetch the in-game profile of a mapped Discord user")
+async def profile(interaction: discord.Interaction, member: discord.Member):
+    if str(member.id) not in user_id_map:
+        await interaction.response.send_message(f"⚠ **{member.display_name}** is not mapped to a game ID. Use `/add_game_id` to add them.", ephemeral=True)
+        return
+    
+    game_id = user_id_map[str(member.id)]
+    data = fetch_game_profile(game_id)
+
+    if not data or data["code"] != 0:
+        await interaction.response.send_message(f"❌ Failed to retrieve profile for **{member.display_name}**.", ephemeral=True)
+        return
+
+    profile_data = data["data"]
+    level_mapping = {
+        31: "30-1", 32: "30-2", 33: "30-3", 34: "30-4",
+        35: "FC 1", 36: "FC 1 - 1", 37: "FC 1 - 2", 38: "FC 1 - 3", 39: "FC 1 - 4",
+        40: "FC 2", 41: "FC 2 - 1", 42: "FC 2 - 2", 43: "FC 2 - 3", 44: "FC 2 - 4",
+        45: "FC 3", 46: "FC 3 - 1", 47: "FC 3 - 2", 48: "FC 3 - 3", 49: "FC 3 - 4",
+        50: "FC 4", 51: "FC 4 - 1", 52: "FC 4 - 2", 53: "FC 4 - 3", 54: "FC 4 - 4",
+        55: "FC 5", 56: "FC 5 - 1", 57: "FC 5 - 2", 58: "FC 5 - 3", 59: "FC 5 - 4",
+        60: "FC 6", 61: "FC 6 - 1", 62: "FC 6 - 2", 63: "FC 6 - 3", 64: "FC 6 - 4",
+        65: "FC 7", 66: "FC 7 - 1", 67: "FC 7 - 2", 68: "FC 7 - 3", 69: "FC 7 - 4",
+        70: "FC 8", 71: "FC 8 - 1", 72: "FC 8 - 2", 73: "FC 8 - 3", 74: "FC 8 - 4",
+        75: "FC 9", 76: "FC 9 - 1", 77: "FC 9 - 2", 78: "FC 9 - 3", 79: "FC 9 - 4",
+        80: "FC 10", 81: "FC 10 - 1", 82: "FC 10 - 2", 83: "FC 10 - 3", 84: "FC 10 - 4"
+    }
+    stove_level = level_mapping.get(profile_data["stove_lv"], profile_data["stove_lv"])
+    embed = discord.Embed(
+        title=f"🎮 {profile_data['nickname']}'s Game Profile",
+        color=discord.Color.blue()
+    )
+    embed.add_field(name="🆔 Game ID", value=f"`{profile_data['fid']}`", inline=True)
+    embed.add_field(name="🔥 Stove Level", value=f"`{stove_level}`", inline=True)
+    embed.set_thumbnail(url=profile_data["avatar_image"])
+    embed.set_footer(text="Whiteout Survival Player Profile")
+
+    await interaction.response.send_message(embed=embed)
 # ---------------------------
 # Slash Command to Like a Member's Profile
 # ---------------------------
@@ -717,78 +1000,126 @@ async def findmatches_command(interaction: discord.Interaction):
 async def help_command(interaction: discord.Interaction):
     embed = discord.Embed(
         title="📖 Bot Instructions",
-        description="Welcome to the Discord Matchmaking Bot! Here's how you can interact with me:",
+        description="Welcome to the Discord Matchmaking & Event Scheduler Bot! Here's how you can interact with me:",
         color=discord.Color.blue()
     )
 
+    # 📌 Profile Management
     embed.add_field(
-        name="📌 **/profile [@User]**",
-        value="Generate or view a user's profile. If no user is mentioned, it defaults to your own profile.",
+        name="👤 **Profile Management**",
+        value="Commands to create and manage your dating profile.",
         inline=False
     )
-
+    embed.add_field(
+        name="🎮 **/add_game_id @User [Game ID]**",
+        value="Add a mapping between a Discord user and their game ID.",
+        inline=False
+    )
+    embed.add_field(
+        name="🗑️ **/remove_game_id @User**",
+        value="Remove a mapping between a Discord user and their game ID.",
+        inline=False
+    )
+    embed.add_field(
+        name="📊 **/list_game_ids**",
+        value="List all Discord user to game ID mappings.",
+        inline=False
+    )
+    embed.add_field(
+        name="🎮 **/profile_mapped @User**",
+        value="Fetch the in-game profile of a mapped Discord user.",
+        inline=False
+    )
+    embed.add_field(
+        name = "🎁 **/gift_code [code]**",
+        value="Redeem a gift code",
+        inline=False
+    )
+    embed.add_field(
+        name="📌 **/profile [@User]**",
+        value="Generate or view a user's profile. Defaults to your own if no user is mentioned.",
+        inline=False
+    )
     embed.add_field(
         name="🔄 **/resetprofile @User**",
-        value="Reset a user's profile. Only administrators can use this command.",
+        value="Reset a user's profile. *(Admin-only)*",
         inline=False
     )
     embed.add_field(
         name="📋 **/listprofiles**",
-        value="List all cached profiles. Only administrators can use this command.",
+        value="List all cached profiles. *(Admin-only)*",
+        inline=False
+    )
+    # 🗓️ Event Scheduling
+    embed.add_field(
+        name="🗓️ **Event Scheduling**",
+        value="Commands to create and manage scheduled events. *(Admin-only)*",
         inline=False
     )
     embed.add_field(
-        name="/schedule_event",
-        value="Schedule a weekly event. Only administrators can use this command. (e.g schedule_event event_name day_of_week time message)",
+        name="⏰ **/schedule_event**",
+        value="Schedule a recurring event (weekly or interval-based).",
         inline=False
     )
     embed.add_field(
-        name="/remove_event",
-        value="Remove a scheduled weekly event. Only administrators can use this command. (e.g remove_event event_name)",
+        name="🗑️ **/remove_event**",
+        value="Remove a scheduled event by name.",
         inline=False
-    )   
+    )
+    embed.add_field(
+        name="🔍 **/next_event**",
+        value="Check the next occurrence of a scheduled event.",
+        inline=False
+    )
 
-    
-
+    # ❤️ Matchmaking
+    embed.add_field(
+        name="💞 **Matchmaking**",
+        value="Commands to like profiles, view matches, and find potential connections.",
+        inline=False
+    )
     embed.add_field(
         name="👍 **/like @User**",
-        value="Like another user's profile. If both users like each other, a mutual match is created!",
+        value="Like another user's profile. If they like you back, it's a match!",
         inline=False
     )
-
     embed.add_field(
         name="👎 **/unlike @User**",
-        value="Unlike a user you have previously liked, potentially breaking a mutual match.",
+        value="Unlike someone, possibly breaking a mutual match.",
         inline=False
     )
-
-    embed.add_field(
-        name="💞 **/mymatches**",
-        value="View all your mutual matches.",
-        inline=False
-    )
-
     embed.add_field(
         name="❤️ **/likes**",
         value="See who has liked your profile.",
         inline=False
     )
-
+    embed.add_field(
+        name="💞 **/mymatches**",
+        value="View all your mutual matches.",
+        inline=False
+    )
     embed.add_field(
         name="🔍 **/findmatches**",
         value="Find potential matches based on existing likes.",
         inline=False
     )
 
+    # 🏆 Leaderboard
     embed.add_field(
-        name="🏆 **/toplikes [number]**",
-        value="View the top profiles ranked by the number of likes they have received. Default is 5.",
+        name="🏆 **Leaderboard**",
+        value="View the top liked profiles.",
+        inline=False
+    )
+    embed.add_field(
+        name="📊 **/toplikes [number]**",
+        value="View the top profiles ranked by likes. Default is 5.",
         inline=False
     )
 
     embed.set_footer(text="Use these commands to interact with the bot and enhance your Discord experience!")
 
-    await interaction.response.send_message(embed=embed)  # ✅ Fixed sending method
+    await interaction.response.send_message(embed=embed)  # ✅ Sends the embed message
+
 
 
 @tree.command(name="sendmessage")
