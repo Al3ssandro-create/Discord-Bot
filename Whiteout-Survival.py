@@ -601,8 +601,6 @@ async def on_ready():
         )
     
     check_birthdays.start()  # Start birthday task loop
-    for guild in bot.guilds:
-        await check_and_request_game_ids(guild)
 # ---------------------------
 # Generate Profile using Groq
 # ---------------------------
