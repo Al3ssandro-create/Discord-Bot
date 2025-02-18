@@ -1,9 +1,11 @@
+import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 import discord
 import random
 import os
-from discord.ext import commands
+from discord.ext import commands,tasks
+from discord.ui import View, Button
 from dotenv import load_dotenv
 import logging
 import json
@@ -16,6 +18,7 @@ from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
 from datetime import datetime, timedelta
 import hashlib
+
 # ---------------------------
 # Logging Configuration
 # ---------------------------
@@ -53,7 +56,63 @@ required_profile_keys = [
     "funny_fact"
 ]
 
-
+BIRTHDAYS = {
+    "January 1": ["Shiko", "Kate"],
+    "January 12": ["Slyghost94"],
+    "January 25": ["BozKurt"],
+    "January 28": ["Gordag"],
+    "January 31": ["Yank"],
+    "February 4": ["Aegis"],
+    "February 25": ["Iksami"],
+    "February 26": ["Ubbe", "The Picklefather"],
+    "March 1": ["princcol2024"],
+    "March 3": ["Finnjävel"],
+    "March 11": ["shinra"],
+    "March 16": ["Hameed"],
+    "March 23": ["Spinx"],
+    "March 28": ["King Ragnar"],
+    "March 29": ["BlurryHabbit"],
+    "April 9": ["Takashii", "Lady Celestial"],
+    "April 15": ["Fray", "Soldado777"],
+    "April 16": ["JaRo"],
+    "April 20": ["gorlack"],
+    "April 29": ["Mag"],
+    "May 9": ["Nocturna"],
+    "May 12": ["Cavalier Viking"],
+    "May 15": ["Vasfi"],
+    "June 15": ["Red Power"],
+    "July 4": ["Bob Ross"],
+    "July 10": ["Thor"],
+    "July 18": ["Benjalina", "Willis Abu"],
+    "July 21": ["thekillmanthe"],
+    "July 25": ["Ghessiouss"],
+    "July 26": ["gorly"],
+    "July 29": ["Richard"],
+    "August 6": ["The_Crow"],
+    "August 10": ["BEKO"],
+    "August 26": ["Warlock"],
+    "August 28": ["Hel"],
+    "August 29": ["CHAOS"],
+    "August 30": ["Atlas"],
+    "September 1": ["Floki"],
+    "September 3": ["petjka"],
+    "September 8": ["Metehan"],
+    "September 9": ["Jay"],
+    "September 10": ["Borys666"],
+    "September 21": ["dawid1987"],
+    "October 2": ["Alticcio"],
+    "October 7": ["Sarah"],
+    "October 11": ["Princess"],
+    "October 21": ["Orphan"],
+    "October 26": ["Zeldris"],
+    "November 5": ["Rolex"],
+    "November 10": ["Kratos"],
+    "November 17": ["Ratatoskr"],
+    "November 21": ["Tkayehko"],
+    "November 30": ["McClain"],
+    "December 12": ["Hind"],
+    "December 22": ["CherryPick"]
+}
 
 # Load or initialize the ID map
 ID_MAP_FILE = "id_map.json"
@@ -73,7 +132,7 @@ def save_id_map():
 # ---------------------------
 profile_cache = {}
 CACHE_FILE = "profile_cache.json"
-
+birthday_channel_id= None
 if os.path.exists(CACHE_FILE):
     with open(CACHE_FILE, "r") as f:
         profile_cache = json.load(f)
@@ -129,10 +188,12 @@ def load_events():
             return json.load(f)
     return {}
 
+CHANNELS_PER_PAGE = 10
 # Save events to cache
 def save_events(events):
     with open(EVENTS_FILE, "w") as f:
         json.dump(events, f, indent=4)
+
 # ---------------------------
 # Discord Bot Setup
 # ---------------------------
@@ -141,6 +202,8 @@ intents.members = True           # Enables the bot to see server members
 intents.message_content = True   # Enables access to message content
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
+
+
 tree = bot.tree
 # ---------------------------
 # Rate Limiting Setup
@@ -157,8 +220,127 @@ async def can_generate_profile(user_id):
     last_called[user_id] = current_time
     return True, 0
 
+# 🔹 Dropdown Menu for Channel Selection (Paginated)
+class ChannelSelect(discord.ui.Select):
+    def __init__(self, bot, ctx, channels, page=0):
+        self.bot = bot
+        self.ctx = ctx
+        self.channels = channels
+        self.page = page  # Current page index
 
+        # 🔹 Paginate the channels
+        start_index = page * CHANNELS_PER_PAGE
+        end_index = start_index + CHANNELS_PER_PAGE
+        paginated_channels = channels[start_index:end_index]
 
+        options = [
+            discord.SelectOption(label=channel.name[:25], value=str(channel.id))
+            for channel in paginated_channels
+        ]
+
+        super().__init__(placeholder=f"Page {page+1}: Select a channel...", options=options)
+
+    async def callback(self, interaction: discord.Interaction):
+        global birthday_channel_id
+        birthday_channel_id = int(self.values[0])  # Save selected channel
+        channel = self.bot.get_channel(birthday_channel_id)
+
+        await interaction.response.send_message(
+            f"✅ Birthday notifications will now be sent in **{channel.mention}**!", ephemeral=True
+        )
+        print(f"🎉 Birthday announcements set to: {channel.name} ({channel.id})")
+        check_birthdays.restart()  # Restart the task with the new channel
+
+# 🔹 View for Dropdown with Pagination Buttons
+class ChannelSelectView(discord.ui.View):
+    def __init__(self, bot, ctx, channels, page=0):
+        super().__init__()
+        self.bot = bot
+        self.ctx = ctx
+        self.channels = channels
+        self.page = page
+        self.total_pages = (len(channels) // CHANNELS_PER_PAGE) + (1 if len(channels) % CHANNELS_PER_PAGE != 0 else 0)
+
+        # Add dropdown with current page
+        self.add_item(ChannelSelect(bot, ctx, channels, page))
+
+        # Add navigation buttons if multiple pages exist
+        if self.total_pages > 1:
+            if page > 0:
+                self.add_item(PreviousPageButton(bot, ctx, channels, page))
+            if page < self.total_pages - 1:
+                self.add_item(NextPageButton(bot, ctx, channels, page))
+
+# 🔹 Button to Go to the Next Page
+class NextPageButton(discord.ui.Button):
+    def __init__(self, bot, ctx, channels, page):
+        super().__init__(label="▶ Next", style=discord.ButtonStyle.primary)
+        self.bot = bot
+        self.ctx = ctx
+        self.channels = channels
+        self.page = page
+
+    async def callback(self, interaction: discord.Interaction):
+        await interaction.response.edit_message(view=ChannelSelectView(self.bot, self.ctx, self.channels, self.page + 1))
+
+# 🔹 Button to Go to the Previous Page
+class PreviousPageButton(discord.ui.Button):
+    def __init__(self, bot, ctx, channels, page):
+        super().__init__(label="◀ Previous", style=discord.ButtonStyle.primary)
+        self.bot = bot
+        self.ctx = ctx
+        self.channels = channels
+        self.page = page
+
+    async def callback(self, interaction: discord.Interaction):
+        await interaction.response.edit_message(view=ChannelSelectView(self.bot, self.ctx, self.channels, self.page - 1))
+
+# 🔹 Task to Check and Announce Birthdays
+@tasks.loop(hours=24)
+async def check_birthdays():
+    today = datetime.now().strftime("%B %d")  # ❌ This is a string!
+    logging.info(f"Checking for birthdays on {today}...")
+    # Convert today's date to a datetime object (ignore year)
+    today_date = datetime.now().replace(year=2000, hour=0, minute=0, second=0, microsecond=0)
+
+    for date_str, names in BIRTHDAYS.items():
+        
+        
+        # Convert stored birthdays to datetime objects
+        date_obj = datetime.strptime(date_str, "%B %d").replace(year=2000, hour=0, minute=0, second=0, microsecond=0)
+
+        # ✅ Correctly compare dates
+        if date_obj == today_date:
+            logging.info(f"🎉 Birthday found for {names}! {birthday_channel_id}")
+            channel = bot.get_channel(birthday_channel_id)
+            if channel:
+                birthday_names = ", ".join(names)
+                await channel.send(f"🎉 **HAPPY BIRTHDAY** 🎉 to {birthday_names}! 🎂🥳")
+
+# 🔹 Command to Manually Check Upcoming Birthdays
+@bot.tree.command(name="birthdays", description="Check upcoming birthdays")
+async def birthdays(interaction: discord.Interaction):
+    today = datetime.now().replace(year=2000)  # Year is ignored for comparison
+    upcoming = []
+
+    # Convert all birthday keys to datetime objects and filter correctly
+    for date_str, names in BIRTHDAYS.items():
+        date_obj = datetime.strptime(date_str, "%B %d").replace(year=2000)
+        if date_obj >= today:
+            upcoming.append((date_obj, date_str, names))
+
+    # Sort by date
+    upcoming.sort()
+
+    # Format output
+    embed = discord.Embed(title="🎂 Upcoming Birthdays", color=discord.Color.blue())
+    for _, date_str, names in upcoming[:10]:  # Limit to 10 upcoming birthdays
+        embed.add_field(name=f"📅 {date_str}", value=", ".join(names), inline=False)
+
+    if not upcoming:
+        embed.description = "No upcoming birthdays."
+
+    await interaction.response.send_message(embed=embed)
 
 # ---------------------------
 # Scheduler Setup
@@ -222,10 +404,10 @@ def redeem_gift_code(gift_code, player_id):
     
     try:
         result = response.json()
-
         logging.info(f"Response: {result}")
-    except json.JSONDecodeError:
-        logging.error("Failed to decode JSON response.")
+    except json.JSONDecodeError as e:
+        logging.error(f"Failed to decode JSON response: {e}. Response text: {response.text}")
+        return "JSON ERROR"
     if result.get("msg") == "SUCCESS":
         return "SUCCESS"
     elif result.get("msg") == "RECEIVED." and result.get("err_code") == 40008:
@@ -236,9 +418,6 @@ def redeem_gift_code(gift_code, player_id):
         return "ALREADY_RECEIVED"
     else:
         return "ERROR"
-# -----------------------------------
-# Restore scheduled events from cache
-# -----------------------------------
 # -----------------------------------
 # Restore scheduled events from cache
 # -----------------------------------
@@ -412,8 +591,18 @@ async def on_ready():
         scheduler.start()
         logging.info("Scheduler started.")
     restore_events()
-    
+    bot_testing_channel = discord.utils.get(bot.get_all_channels(), name="🤖bot-testing")
 
+    if bot_testing_channel:
+        all_text_channels = bot_testing_channel.guild.text_channels  # Get all text channels
+        await bot_testing_channel.send(
+            "🔔 **Select a channel for birthday notifications!**",
+            view=ChannelSelectView(bot, bot_testing_channel, all_text_channels)
+        )
+    
+    check_birthdays.start()  # Start birthday task loop
+    for guild in bot.guilds:
+        await check_and_request_game_ids(guild)
 # ---------------------------
 # Generate Profile using Groq
 # ---------------------------
@@ -494,6 +683,11 @@ async def gift_code(interaction: discord.Interaction, gift_code: str):
             response_messages.append(f"❌ `{player_id}`: **Gift code not found.**")
         elif result == "ERROR":
             response_messages.append(f"❌ `{player_id}`: **Error redeeming gift code.**")
+        elif result == "JSON ERROR":
+            response_messages.append(f"❌ `{player_id}`: **JSON decoding error.**")
+
+        # Add a delay to avoid hitting rate limits
+        await asyncio.sleep(1)  # Adjust the delay as needed
 
     # 🔹 Send final response after processing all users
     logging.info("\n".join(response_messages))
@@ -769,6 +963,68 @@ async def add_game_id(interaction: discord.Interaction, member: discord.Member, 
     user_id_map[str(member.id)] = game_id
     save_id_map()
     await interaction.response.send_message(f"✅ Added **{member.display_name}** with game ID **{game_id}**!", ephemeral=True)
+
+
+class AddGameIDView(View):
+    def __init__(self, member):
+        super().__init__(timeout=None)
+        self.member = member
+
+    @discord.ui.button(label="Add Game ID", style=discord.ButtonStyle.green)
+    async def add_game_id_button(self, interaction: discord.Interaction, button: Button):
+        if interaction.user != self.member:
+            await interaction.response.send_message("This button is not for you!", ephemeral=True)
+            return
+
+        await interaction.response.send_message("Please reply with your game ID.", ephemeral=True)
+
+        def check(m):
+            return m.author == self.member and m.channel == interaction.channel
+
+        try:
+            response = await interaction.client.wait_for("message", check=check, timeout=60)
+            game_id = response.content
+
+            user_id_map[str(self.member.id)] = int(game_id)
+            save_id_map()
+
+            await interaction.followup.send(f"✅ Your game ID `{game_id}` has been added!", ephemeral=True)
+        except TimeoutError:
+            await interaction.followup.send("⏳ You took too long to respond. Please try again.", ephemeral=True)
+
+async def on_member_join(member):
+    if member.bot:
+        return  # Skip bots
+
+    member_id = str(member.id)
+    if member_id not in user_id_map:
+        try:
+            view = AddGameIDView(member)
+            await member.send(
+                "Welcome to the server! You are not mapped to any game ID in our system. "
+                "Click the button below to add your game ID.",
+                view=view
+            )
+        except discord.Forbidden:
+            print(f"Could not send DM to {member.display_name}.")
+
+async def check_and_request_game_ids(guild):
+    for member in guild.members:
+        if member.bot:
+            continue  # Skip bots
+
+        member_id = str(member.id)
+        if member_id not in user_id_map:
+            try:
+                view = AddGameIDView(member)
+                await member.send(
+                    "Hello! You are currently not mapped to any game ID in our system. "
+                    "Adding your game ID will allow you to use certain features such as showing your game profile and moreover it will allow for autoredemption of the gift codes. "
+                    "Click the button below to add your game ID.",
+                    view=view
+                )
+            except discord.Forbidden:
+                print(f"Could not send DM to {member.display_name}.")
 # -----------------------------------
 # 📌 Slash Command to Remove a Mapping
 # -----------------------------------
